@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html amp>
+<head>
+	<title>Zen</title>
+	{% include head.html %}
+</head>
+<body>
+	<br>
+	<div class="container">
+		<p class="text-center"><a href="/">Zen</a></p>
+		{% include menu-kategori.html %}
+		<div class="row">
+			<div class="col-md-3">
+				{% include menu.html %}
+			</div>
+			<div class="col-md-9">
+				{{ content }}
+			</div>
+		</div>
+	</div>
+</body>
+</html>

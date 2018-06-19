@@ -1,0 +1,55 @@
+.isi {
+    max-width: 600px;
+    margin: auto;
+}
+
+.panel ol,
+.panel ul {
+    margin-bottom: 20px;
+}
+
+.panel p,
+.panel li {
+    font-size: 15px;
+}
+
+.panel p {
+    margin: 0 0 20px;
+}
+
+.panel li p {
+    margin: 0 0 10px;
+}
+
+.panel h1,
+.panel h2,
+.panel h3,
+.panel h4,
+.panel h5,
+.panel h6 {
+    margin: 30px 0 20px;
+}
+
+.panel pre {
+    margin-bottom: 20px;
+}
+
+.panel li pre {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-top: 0;
+}
+
+.btn {
+    margin-bottom: 4px;
+}
+
+pre {
+    word-break: normal;
+}
+
+pre.highlight {
+    word-break: break-all;
+}

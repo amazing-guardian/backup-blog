@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+
+<head>
+    <title>{% if page.date %}{{ page.title }} - {% endif %}{{ site.title }} - {{ site.description }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- channel telegram -->
+
+    <meta name="telegram:channel" content="@zenblog">
+
+    <!-- id aplikasi facebook -->
+
+    <meta content="138657143371048" property="fb:app_id">
+    <meta content="100000415959373" property="fb:admins">
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+    <link rel="stylesheet" type="text/css" href="/bin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bin/highlight github.css">
+    <link rel="stylesheet" type="text/css" href="/bin/style.css">
+    {% include medsos.html %}
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header text-center">
+            <h1><a href="/" class="disable">{{ site.title }}{% if page.date %}/{{ page.category | capitalize }}{% endif %}</a></h1>
+        </div>
+        <ol class="breadcrumb">
+
+            {% assign tags_list = site.categories %}  
+              {% if tags_list.first[0] == null %}
+                {% for tag in tags_list %} 
+                  <li><a href="/cari.html?q=kategori_{{ tag }}_kategori">{{ tag | capitalize }}</a></li>
+                {% endfor %}
+              {% else %}
+                {% for tag in tags_list %} 
+                  <li><a href="/cari.html?q=kategori_{{ tag[0] }}_kategori">{{ tag[0] | capitalize }}</a></li>
+                {% endfor %}
+              {% endif %}
+            {% assign tags_list = nil %}
+        
+        </ol>
+
+        <!-- summon jquery -->
+
+        <script type="text/javascript" src="/bin/jquery.min.js"></script>
+
+        <div class="cari">
+            {% include cari.html %}
+        </div>
+
+        {{ content }}
+
+        <!-- memperbaiki thumbnail -->
+
+        <script type="text/javascript">
+            $(".box .content img").css("min-height", $(".box .content").height())
+        </script>
+
+        <br>
+        <!-- feedjit -->
+        <style type="text/css">
+        {% if page.feedjit == null %}
+            #FJ_TF_Cont {
+                display: none;
+            }
+            </style>
+            {% include feedjit.html %}
+        {% endif %}
+        <!-- feedjit end -->
+    </div>
+</body>
+
+</html>

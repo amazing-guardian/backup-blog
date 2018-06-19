@@ -1,0 +1,15 @@
+title: Zen
+description: Vini Vidi Vici
+
+url: "http://muhammadzaini.com"
+gambar: "http://aozoraworld.files.wordpress.com/2013/05/oreki-x-chitanda.jpg"
+twitter_username: mzaini30
+
+lokasi: "/home/blog (git)"
+permalink: "/:year/:month/:day/:title.html"
+
+gems:
+  - jekyll-paginate
+
+paginate: 12
+paginate_path: "/halaman/:num/"

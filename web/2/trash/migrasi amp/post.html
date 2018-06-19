@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html amp>
+<head>
+    <meta charset="utf-8">
+    <title>{% if page.date %}{{ page.title }} - {% endif %}{{ site.title }} - {{ site.description }}</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+    <link rel="canonical" href="{{ page.url }}">
+
+    <!-- id aplikasi facebook -->
+
+    <meta content="138657143371048" property="fb:app_id">
+    <meta content="100000415959373" property="fb:admins">
+
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+
+    <link rel="stylesheet" type="text/css" href="/bin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bin/highlight github.css">
+    <link rel="stylesheet" type="text/css" href="/bin/style.css">
+    <link rel="stylesheet" type="text/css" href="/bin/post.css">
+    <link rel="stylesheet" type="text/css" href="/bin/medium.css">
+    {% include medsos.html %}
+    
+    <!-- amp -->
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "headline": "{{ page.title }}",
+        "datePublished": "{{ page.date | date_to_xmlschema}}",
+        // "datePublished": "2015-10-07T12:02:41Z",
+        "image": [
+          "{% if page.gambar %}{{ page.gambar | replace: 'h120', 's900' }}{% else %}{{ site.gambar | replace: 'h120', 's900' }}{% endif %}"
+        ]
+      }
+    </script>
+    <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+    <script async src="https://cdn.ampproject.org/v0.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="page-header text-center">
+            <h1><a href="/" class="disable">{{ site.title }}</a></h1>
+        </div>
+
+        
+
+
+        
+
+<div class="panel panel-default panel-isi">
+    <img src="{% if page.gambar %}{{ page.gambar | replace: 'h120', 's900' }}{% else %}{{ site.gambar | replace: 'h120', 's900' }}{% endif %}" width="100%">
+    <div class="panel-body">
+        <center>
+            <h1>{{ page.title }}</h1>
+
+            
+        </center>
+        <div class="isi">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<!-- related posts -->
+
+{% assign satu = page.date | date: "%s" | plus: 1 | modulo: site.posts.size %}
+{% assign dua = page.date | date: "%s" | plus: 2 | modulo: site.posts.size %}
+{% assign tiga = page.date | date: "%s" | plus: 3 | modulo: site.posts.size %}
+
+<div class="row">
+    <div class="col-sm-4">
+        <a href="{{ site.posts[satu].url }}" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="{{ site.posts[satu].gambar | replace: 'h120', 's300' }}">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>{{ site.posts[satu].title }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="{{ site.posts[dua].url }}" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="{{ site.posts[dua].gambar | replace: 'h120', 's300' }}">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>{{ site.posts[dua].title }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="{{ site.posts[tiga].url }}" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="{{ site.posts[tiga].gambar | replace: 'h120', 's300' }}">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>{{ site.posts[tiga].title }}</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script type="text/javascript">
+function edit() {
+    prompt("Skrip untuk mengedit:", "subl \"{{ site.lokasi }}/{{ page.path }}\"")
+}
+</script>
+
+<!-- responsive table -->
+
+<script type="text/javascript">
+$("table").addClass("table")
+    .wrapAll("<div class='table-responsive'>")
+</script>
+
+
+
+
+<!-- memperbaiki thumbnail -->
+
+<script type="text/javascript" src="/bin/jquery.min.js"></script>
+<script type="text/javascript">
+    $(".box .content img").css("min-height", $(".box .content").height())
+</script>
+<br>
+
+<!-- komentar facebook -->
+
+<div id='fb-root'></div>
+<div id='container-commentfb' style='width: 100%;'></div>
+<script src='http://connect.facebook.net/en_US/all.js#xfbml=1'></script>
+<script type="text/javascript">
+var url = "{{ site.url }}{{ page.url }}"
+var containercm_width = $('#container-commentfb').width();
+$('#container-commentfb').html('<div class="fb-comments" ' +
+    'data-href="' + url + '"' +
+    ' width="' + containercm_width + '" data-num-posts="10"></div>');
+FB.XFBML.parse();
+</script>
+<br>
+                            
+
+    </div>
+</body>
+
+</html>

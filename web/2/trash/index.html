@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Zen</title>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+    <link rel="stylesheet" type="text/css" href="bin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bin/font awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="bin/materialize color.css">
+    <link rel="stylesheet" type="text/css" href="bin/timeline.css">
+    <link rel="stylesheet" type="text/css" href="bin/style.css">
+    {% include medsos.html %}
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 stick">
+                <br>
+                <center>
+                    <img src="image/sorata kanda.jpg">
+                    <h1>Zen</h1>
+                    <p><em>Mahasiswa psikologi, developer, programmer.</em></p>
+                    <p><a class="btn btn-default green white-text" href="http://api.whatsapp.com/send?phone=6282314970805&text=Assalamualaikum" role="button"><i class="fa fa-whatsapp"></i> &nbsp; Hubungi saya di Whatsapp</a></p>
+                </center>
+            </div>
+            <div class="col-sm-6 stick timeline">
+                <br>
+                <div class="panel blue white-text kendali-lebar">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">
+                        <center>Blogs</center>
+                        </h3>
+                    </div>
+                    <div class="list-group">
+                        {% for post in paginator.posts %}
+                            <a href="{{ post.url }}" class="list-group-item">{{ post.title }}</a>
+                        {% endfor %}
+                    </div>
+                </div>
+                <div class="item kendali-lebar">
+                    <div id="timeline">
+                        <div>
+                            <section class="year">
+                                <h3>2017</h3>
+                                <section>
+                                    <ul>
+                                        <li>Membuat <a href="http://t.me/podcast30">podcast</a> di Telegram yang berisi rekaman ceramah, pidato, maupun seminar. Kini sudah ada <span class="red-text">1</span> rekaman</a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Bergabung dengan <a href="http://t.me/samarindaberdaya">Samarinda Berdaya</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Web developer di game house <a href="http://programmerbodong.uphero.com">Seven Different</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Web developer di <a href="http://psikologi.fisip-unmul.ac.id">program studi Psikologi</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Melakukan penelitian dengan judul "Mengenal Agama Adat Lawas Sebagai Makna Hidup (pada Suku Kutai di Desa Kedang Ipil)"</li>
+                                    </ul>
+                                </section>
+                            </section>
+                            <section class="year">
+                                <h3>2016</h3>
+                                <section>
+                                    <ul>
+                                        <li>Bergabung di <a href="http://projecteuler.net/profile/mzaini30.png">Project Euler</a>. Kini telah menyelesaikan <span class="red-text">4</span> puzzle</li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Bergabung dengan Samarinda Startup Community</li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Web developer di <a href="http://wilayah3.ilmpi.org/">Ikatan Lembaga Mahasiswa Psikologi Indonesia</a></li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li><a href="http://himapsiunmul.blogspot.co.id/2017/03/biodata-wakil-ketua-umum-himpunan.html">Wakil ketua</a> Himpunan Mahasiswa Psikologi Universitas Mulawarman</li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Bergabung di <a href="http://medium.com/@mzaini30">Medium</a>. Kini tulisan-tulisannya telah mencapai <span class="red-text">1094</span> views, <span class="red-text">911</span> reads, dan <span class="red-text">13</span> fans</li>
+                                    </ul>
+                                </section>
+                            </section>
+                            <section class="year">
+                                <h3>2015</h3>
+                                <section>
+                                    <ul>
+                                        <li>Mengambil program studi <a href="http://psikologi.fisip-unmul.ac.id">Psikologi</a> di Universitas Mulawarman Samarinda</li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Membuat <a href="http://medium.com/@mzaini30/web-apps-73c23ae42e5c">aplikasi web</a>. Kini sudah ada <span class="red-text">16</span> aplikasi yang siap digunakan</li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <ul>
+                                        <li>Bergabung di <a href="http://github.com/mzaini30">Github</a>. Kini telah membuat <span class="red-text">59</span> repositori</li>
+                                    </ul>
+                                </section>
+                            </section>
+                            <section class="year">
+                                <h3>2014</h3>
+                                <section>
+                                    <ul>
+                                        <li><a href="http://www.facebook.com/groups/wdc14/permalink/560645667403320/">Desain terkreatif dan inovatif</a> dalam National Web Design Competition</li>
+                                    </ul>
+                                </section>
+                            </section>
+                            <section class="year">
+                                <h3>2013</h3>
+                                <section>
+                                    <ul>
+                                        <li>Sekretaris OSIS <a href="http://isykarima.com">Mahad Tahfizhul Quran Isykarima</a></li>
+                                    </ul>
+                                </section>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 stick">
+                <br>
+                <center>
+                    <h1>Skills</h1>
+                </center>
+                <p>Desain website (80%)</p>
+                <p>
+                    <div class="progress">
+                        <div class="progress-bar green" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
+                        </div>
+                    </div>
+                </p>
+                <p>Mengembangkan aplikasi (75%)</p>
+                <p>
+                    <div class="progress">
+                        <div class="progress-bar yellow" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%">
+                        </div>
+                    </div>
+                </p>
+                <p>Mengetik cepat (90%)</p>
+                <p>
+                    <div class="progress">
+                        <div class="progress-bar blue" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%">
+                        </div>
+                    </div>
+                </p>
+                <p>Merancang konten (60%)</p>
+                <p>
+                    <div class="progress">
+                        <div class="progress-bar orange" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                        </div>
+                    </div>
+                </p>
+                <p>Tester psikologi (50%)</p>
+                <p>
+                    <div class="progress">
+                        <div class="progress-bar red" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+                        </div>
+                    </div>
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <script type="text/javascript" src="bin/jquery.min.js"></script>
+    <script type="text/javascript" src="bin/imagesloaded.pkgd.min.js"></script>
+    <script type="text/javascript" src="bin/sticky kit.min.js"></script>
+    <script type="text/javascript" src="bin/app.js"></script>
+</body>
+
+</html>

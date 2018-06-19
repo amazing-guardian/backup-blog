@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html amp>
+<head>
+	<title>{{ page.title }} - Zen</title>
+	{% include head.html %}
+</head>
+<body>
+	<br>
+	<div class="container">
+		<p class="text-center"><a href="/">Zen</a></p>
+		{% include menu-kategori.html %}
+		<div class="row">
+			<div class="col-md-6 col-md-push-3">
+				<p class="text-center"><strong><span class="telegram-title">{{ page.title }}</span></strong></p>
+				<p class="text-center">{{ page.date | date: "%-d %B %Y" }}</p>
+				<div class="telegram-body">{{ content }}</div>
+				<p class="text-center">
+					<a href="https://api.whatsapp.com/send?phone=6281545143654&text=*Link*%3A%20{{ site.url }}{{ page.url }}%0A%0A*Komentar*%3A%0A">Komentar lewat Whatsapp</a>
+					&bull;
+					<a href="mailto:muhzaini30@gmail.com?subject=Komentar%20Blog%3A%20{{ page.title }}&body=Link%3A%20{{ site.url }}{{ page.url }}%0A%0AKomentar%3A%0A">Komentar lewat Email</a>
+					<!-- &bull; -->
+					<!-- Nggak bisa link ke javascript -->
+					<!-- <a href="javascript:prompt('Skrip untuk mengedit:', 'subl \'{{ site.lokasi }}/{{ page.path }}\''); void(0);">Edit</a> -->
+				</p>
+				<p class="text-center">
+					<!-- <a href="https://www.facebook.com/sharer/sharer.php?url={{ site.url }}{{ page.url }}">Share ke Facebook</a> -->
+					<a href="http://t.me/zenblog30">Follow Blog di Telegram</a>
+					&bull;
+					<a href="https://telegram.me/share/url?url={{ page.title | replace: "?", "%3F" | replace: "&", "%26" | replace: "=", "%3D" }}%0A%0Ahttps://t.me/iv%3Furl%3D{{ site.url }}{{ page.url }}%26rhash%3Da47aa46565ca49">Share ke Telegram</a>
+					<!--  -->
+				</p>
+				<p class="text-center">
+					<a href="/tulis/?subl '{{ site.lokasi }}/{{ page.path }}'" target="_blank">Edit</a>
+				</p>
+			</div>
+			<div class="col-md-3 col-md-pull-6">
+				{% include menu.html %}
+			</div>
+			<div class="col-md-3">
+				<p>Postingan</p>
+				<ol>
+					{% for post in site.posts %}
+						<li><a href="{{ post.url }}">{{ post.title }}</a></li>
+					{% endfor %}
+				</ol>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

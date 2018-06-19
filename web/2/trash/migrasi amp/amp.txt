@@ -1,0 +1,2 @@
+img jadi amp-img
+style amp-custom

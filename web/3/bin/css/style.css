@@ -1,0 +1,18 @@
+.media-object {
+    width: 50px;
+}
+.media-body {
+	padding-top: 6px;
+}
+.list-group {
+	margin-bottom: 0;
+	padding-top: 46px;
+}
+.fixed-top {
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+}
+.judul {
+	margin-top: 10px;
+}

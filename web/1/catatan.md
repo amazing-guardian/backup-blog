@@ -1,0 +1,1 @@
+Resize image: https://images1-focus-opensocial.googleusercontent.com/gadgets/proxy?container=focus&resize_w=250&url=http://andshelived.files.wordpress.com/2008/10/killer-mater.jpg

@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="row postlist">
+    {% for post in paginator.posts %}
+        <div class="col-md-4">
+            <a href="{{ post.url }}" class="disable">
+                <div class="panel panel-default">
+                    <div class="box">
+                        <div class="content">
+                            <img src="{{ post.gambar }}">
+                        </div>
+                    </div>
+                    <div class="panel-body">
+                        <p>{{ post.title }}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="break"></div>
+    {% endfor %}
+</div>
+
+{% if paginator.previous_page or paginator.next_page %}
+<nav aria-label="">
+    <ul class="pager">
+        {% if paginator.previous_page %}
+        <li class="previous"><a href="{{ paginator.previous_page_path }}" class="disable"><span aria-hidden="true">&larr;</span> Newer</a></li>
+        {% endif %}
+        {% if paginator.next_page %}
+        <li class="next"><a href="{{ paginator.next_page_path }}" class="disable">Older <span aria-hidden="true">&rarr;</span></a></li>
+        {% endif %}
+    </ul>
+</nav>
+{% endif %}
+
+<script type="text/javascript" src="/bin/rapi.js"></script>

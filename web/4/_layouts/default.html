@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font/build/web/hack-subset.css">
+	<link rel="stylesheet" type="text/css" href="/bin/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="/bin/css/jquery-sakura.min.css">
+	<style type="text/css">
+		html {
+			cursor: url(http://cur.cursors-4u.net/anime/ani-12/ani1147.ani), url(http://cur.cursors-4u.net/anime/ani-12/ani1147.gif), progress !important;
+		}
+	</style>
+	<style type="text/css">
+		* {
+			font-family: Hack, monospace;
+		}
+		body {
+			width: 80%;
+			margin: auto;
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<p>
+			<pre>
+███████╗███████╗███╗   ██╗
+╚══███╔╝██╔════╝████╗  ██║
+  ███╔╝ █████╗  ██╔██╗ ██║
+ ███╔╝  ██╔══╝  ██║╚██╗██║
+███████╗███████╗██║ ╚████║
+╚══════╝╚══════╝╚═╝  ╚═══╝
+			</pre>
+		</p>
+	</center>
+	<p><strong>New posts &rarr;</strong></p>
+	<ol>
+		<li><a href="#" class="tulisan-1"></a></li>
+		<li><a href="#" class="tulisan-2"></a></li>
+		<li><a href="#" class="tulisan-3"></a></li>
+		<li><a href="#" class="tulisan-4"></a></li>
+		<li><a href="#" class="tulisan-5"></a></li>
+		<li><a href="#" class="tulisan-6"></a></li>
+		<li><a href="#" class="tulisan-7"></a></li>
+		<li><a href="#" class="tulisan-8"></a></li>
+		<li><a href="#" class="tulisan-9"></a></li>
+		<li><a href="#" class="tulisan-10"></a></li>
+	</ol>
+	{{ content }}
+	<center>
+		<p>“ヽ(´▽｀)ノ”</p>
+	</center>
+	<script type="text/javascript">
+		{% include jquery-3.2.1.min.js %}
+	</script>
+	<script type="text/javascript">
+		jQuery(function($) {
+		    $.getJSON('http://public-api.wordpress.com/rest/v1/sites/mzaini30.wordpress.com/posts/?number=10&callback=?')
+		        .done(function(response) {
+		            $('.tulisan-1')
+		                .html(response.posts[0].title)
+		                .attr('href', response.posts[0].URL);
+		            $('.tulisan-2')
+		                .html(response.posts[1].title)
+		                .attr('href', response.posts[1].URL);
+		            $('.tulisan-3')
+		                .html(response.posts[2].title)
+		                .attr('href', response.posts[2].URL);
+		            $('.tulisan-4')
+		                .html(response.posts[3].title)
+		                .attr('href', response.posts[3].URL);
+		            $('.tulisan-5')
+		                .html(response.posts[4].title)
+		                .attr('href', response.posts[4].URL);
+		            $('.tulisan-6')
+		                .html(response.posts[5].title)
+		                .attr('href', response.posts[5].URL);
+		            $('.tulisan-7')
+		                .html(response.posts[6].title)
+		                .attr('href', response.posts[6].URL);
+		            $('.tulisan-8')
+		                .html(response.posts[7].title)
+		                .attr('href', response.posts[7].URL);
+		            $('.tulisan-9')
+		                .html(response.posts[8].title)
+		                .attr('href', response.posts[8].URL);
+		            $('.tulisan-10')
+		                .html(response.posts[9].title)
+		                .attr('href', response.posts[9].URL);
+		        });
+		});
+	</script>
+	<script type="text/javascript">
+		{% include jquery-sakura.min.js %}
+	</script>
+	<script type="text/javascript">
+		$(function(){
+			$("body").sakura();
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+android:
+  -
+    judul: "Puasa 2017."
+    deskripsi: "Berisi jadwal puasa sunnah selama tahun 2017."
+    link: "https://github.com/mzaini30/aplikasi-android/blob/master/puasa-2017.apk?raw=true"
+
+excel:
+  -
+    judul: ""
+    deskripsi: ""
+    link: ""
+
+python:
+  -
+    judul: ""
+    deskripsi: ""
+    link: ""
+
+web:
+  -
+    judul: "Blogwalking"
+    deskripsi: "Mengunjungi blog-blog secara acak."
+    link: "/blogwalking2"
+  -
+    judul: "Download"
+    deskripsi: "Mengunduh banyak link sekaligus."
+    link: "/download"
+  -
+    judul: "Enneagram"
+    deskripsi: "Tes kepribadian."
+    link: "/enneagram"
+  -
+    judul: "Enter"
+    deskripsi: "Menghilangkan enter pada dokumen."
+    link: "/enter"
+  -
+    judul: "Font"
+    deskripsi: "Mencoba berbagai font secara langsung."
+    link: "/font"
+  -
+    judul: "Link"
+    deskripsi: "Penyingkat URL."
+    link: "/link"
+  -
+    judul: "Markdown"
+    deskripsi: "Preview teks markdown secara langsung."
+    link: "/markdown"
+  -
+    judul: "Materialize Color"
+    deskripsi: "Kumpulan warna segar, cocok digunakan untuk desain produk."
+    link: "/color30"
+  -
+    judul: "Murajaah"
+    deskripsi: "Anjuran juz untuk murajaah hari ini."
+    link: "/murajaah"
+  -
+    judul: "Murajaah Simpel"
+    deskripsi: "Aplikasi murajaah dengan tampilan sederhana."
+    link: "/murajaah-simple"
+  -
+    judul: "Psikoweb"
+    deskripsi: "Treatment psikologi berbasis website."
+    link: "http://psikoweb.xyz"
+  -
+    judul: "Regex Tab"
+    deskripsi: "Mengubah 2 spasi menjadi 1 tab."
+    link: "/regex-tab"
+  -
+    judul: "Review Jurnal"
+    deskripsi: "Panduan mereview jurnal."
+    link: "/review-jurnal"
+  -
+    judul: "Tutorial Jade"
+    deskripsi: "Tutorial bahasa markup Jade."
+    link: "/tutorialjade"
+  -
+    judul: "Translate"
+    deskripsi: "Menerjemahkan halaman web berbahasa Inggris ke bahasa Indonesia dengan cepat."
+    link: "/translate"
+  -
+    judul: "Undian"
+    deskripsi: "Dapat digunakan untuk arisan."
+    link: "/undian"

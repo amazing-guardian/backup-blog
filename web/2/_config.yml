@@ -1,0 +1,14 @@
+title: Zen
+description: Vini Vidi Vici
+
+url: "http://muhammadzaini.com"
+gambar: "http://4.bp.blogspot.com/-gG9eLdJ5QaY/WcaCBqkBahI/AAAAAAAAAEI/46vkxVd2utQTZP-YtsElKgZZzMtoXSr5QCLcBGAs/h120/__happy_easter___by_ih8m0r0nz-d3e22eu.png"
+twitter_username: mzaini30
+
+lokasi: "/home/zen - situs official (git)"
+
+gems:
+  - jekyll-paginate
+
+paginate: 18
+paginate_path: "/halaman/:num/"

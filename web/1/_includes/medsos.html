@@ -1,0 +1,59 @@
+<!-- facebook -->
+
+{% if page.title %}
+<meta content="{{ page.title | replace: '"', '' }} - {{ site.title }} - {{ site.description }}" property="og:title">
+{% else %}
+<meta content="{{ site.title }} - {{ site.description }}" property="og:title">
+{% endif %}
+
+{% if page.url %}
+<meta content="{{ site.url }}{{ page.url }}" property="og:url">
+{% else %}
+<meta content="{{ site.url }}" property="og:url">
+{% endif %}
+
+<meta content="{{ site.title }}" property="og:site_name">
+
+{% if page.excerpt %}
+<meta content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" property="og:description">
+{% else %}
+<meta content="{{ site.description }}" property="og:description">
+{% endif %}
+
+{% if page.gambar %}
+<meta content="{{ page.gambar | replace: '&', '%26' | replace: '=', '%3D' }}" property="og:image">
+{% else %}
+<meta content="{{ site.gambar | replace: '&', '%26' | replace: '=', '%3D' }}" property="og:image">
+{% endif %}
+<meta content="blog" property="og:type">
+
+<!-- twitter -->
+
+<meta content="summary_large_image" name="twitter:card">
+
+{% if page.excerpt %}
+<meta content="{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}" name="twitter:description">
+{% else %}
+<meta content="{{ site.description }}" name="twitter:description">
+{% endif %}
+
+{% if page.title %}
+<meta content="{{ page.title | replace: '"', '' }} - {{ site.title }} - {{ site.description }}" name="twitter:title">
+{% else %}
+<meta content="{{ site.title }} - {{ site.description }}" name="twitter:title">
+{% endif %}
+
+{% if page.url %}
+<meta content="{{ site.url }}{{ page.url }}" name="twitter:url">
+{% else %}
+<meta content="{{ site.url }}" name="twitter:url">
+{% endif %}
+
+<meta content="{{ site.title }}" name="twitter:site">
+<meta content="@{{ site.twitter_username }}" name="twitter:creator">
+
+{% if page.gambar %}
+<meta content="{{ page.gambar }}" property="twitter:image"> 
+{% else %}
+<meta content="{{ site.gambar }}" property="twitter:image"> 
+{% endif %}

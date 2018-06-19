@@ -1,0 +1,10 @@
+url: http://muhammadzaini.com
+description: 'Senyumlah :)'
+gambar: https://img00.deviantart.net/920b/i/2013/306/5/7/daisuki_by_dasketcherz-d6sp979.png
+lokasi: '/media/data/web/mzaini30.github.io (git)'
+highlighter: rouge
+markdown:    kramdown
+gems:
+  - jekyll-paginate
+paginate: 5
+permalink: /:year/:month/:day/:title.html

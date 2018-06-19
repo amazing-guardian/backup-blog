@@ -1,0 +1,157 @@
+---
+layout: default
+---
+
+<script type="text/javascript">
+    kategori = "{{ page.category }}"
+</script>
+<link rel="stylesheet" type="text/css" href="/bin/post.css">
+<div class="panel panel-default">
+    <img src="{% if page.gambar %}{{ page.gambar }}{% else %}{{ site.gambar }}{% endif %}" width="100%">
+    <div class="panel-body">
+        <center>
+            <h1>{{ page.title }}</h1>
+        </center>
+        <div class="isi">
+        	{{ content }}
+        	<br class="not-telegram">
+            <center>
+                <p class="not-telegram">Ingin mendapatkan kabar terbaru dari dunia teknologi dan <em>lifehack</em>? Klik media sosial di bawah ini</p>
+                <p class="not-telegram">
+                    <a class="btn btn-default disable" style="background-color: rgb(59, 89, 152); color: rgb(255, 255, 255);" href="http://facebook.com/mzaini30" role="button">Facebook</a>
+                    <a class="btn btn-default disable" style="background-color: rgb(29, 161, 242); color: rgb(255, 255, 255);" href="http://twitter.com/mzaini30" role="button">Twitter</a>
+                    <a class="btn btn-default disable" style="background-color: rgb(0, 195, 0); color: rgb(255, 255, 255);" href="http://line.me/R/ti/g/fpn4qvJ6SD" role="button">LINE</a>
+                    <a class="btn btn-default disable" style="background-color: rgb(0, 136, 204); color: rgb(255, 255, 255);" href="http://telegram.dog/zenblog" role="button">Telegram</a>
+                    <a class="btn btn-default disable" style="background-color: rgb(127, 187, 0); color: rgb(255, 255, 255);" href="http://gitlab.com/mzaini30/zenapk/raw/master/zen.apk" role="button">Android</a>
+                    <a class="btn btn-default disable" style="background-color: rgb(242, 101, 34); color: rgb(255, 255, 255);" href="http://muhammadzaini.com/feed.xml" role="button">RSS</a>
+                </p>
+            </center>
+        </div>
+    </div>
+</div>
+
+<!-- komentar facebook -->
+
+<div id='fb-root'></div>
+<div id='container-commentfb' style='width: 100%;'></div>
+<br>
+
+<!-- related posts -->
+
+<div class="row">
+    <div class="col-sm-4">
+        <a href="#" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="http://img09.deviantart.net/9f4c/i/2013/021/7/c/don__t_feel_blue____by_janneo-d38by92.jpg">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>Hello World</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="#" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="http://img09.deviantart.net/9f4c/i/2013/021/7/c/don__t_feel_blue____by_janneo-d38by92.jpg">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>Hello World</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="#" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="http://img09.deviantart.net/9f4c/i/2013/021/7/c/don__t_feel_blue____by_janneo-d38by92.jpg">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>Hello World</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div style="clear: both;"></div>
+    <div class="col-sm-4">
+        <a href="#" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="http://img09.deviantart.net/9f4c/i/2013/021/7/c/don__t_feel_blue____by_janneo-d38by92.jpg">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>Hello World</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="#" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="http://img09.deviantart.net/9f4c/i/2013/021/7/c/don__t_feel_blue____by_janneo-d38by92.jpg">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>Hello World</p>
+                </div>
+            </div>
+        </a>
+    </div>
+    <div class="col-sm-4">
+        <a href="#" class="disable">
+            <div class="panel panel-default">
+                <div class="box">
+                    <div class="content">
+                        <img src="http://img09.deviantart.net/9f4c/i/2013/021/7/c/don__t_feel_blue____by_janneo-d38by92.jpg">    
+                    </div>
+                </div>
+                <div class="panel-body">
+                    <p>Hello World</p>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<script type="text/javascript">
+function edit() {
+    prompt("Skrip untuk mengedit:", "subl \"{{ site.lokasi }}/{{ page.path }}\"")
+}
+</script>
+
+<!-- responsive table -->
+
+<script type="text/javascript">
+$("table").addClass("table")
+    .wrapAll("<div class='table-responsive'>")
+</script>
+
+<!-- related posts -->
+
+<script type="text/javascript" src="/bin/posts.js"></script>
+<script type="text/javascript" src="/bin/related.js"></script>
+
+<!-- komentar facebook -->
+
+<script src='http://connect.facebook.net/en_US/all.js#xfbml=1'></script>
+<script type="text/javascript">
+var url = "{{ site.url }}{{ page.url }}"
+var containercm_width = $('#container-commentfb').width();
+$('#container-commentfb').html('<div class="fb-comments" ' +
+    'data-href="' + url + '"' +
+    ' width="' + containercm_width + '" data-num-posts="10"></div>');
+FB.XFBML.parse();
+</script>

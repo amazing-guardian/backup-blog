@@ -1,0 +1,165 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>{% if page.date %}{{ page.title }} - {% endif %}{{ site.title }} - {{ site.description }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <meta content="138657143371048" property="fb:app_id">
+    <meta content="100000415959373" property="fb:admins">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+    <link rel="stylesheet" type="text/css" href="/bin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bin/highlight github.css">
+    <link rel="stylesheet" type="text/css" href="/bin/style.css">
+    <link rel="stylesheet" type="text/css" href="/bin/post.css">
+    <link rel="stylesheet" type="text/css" href="/bin/medium.css">
+    {% include medsos.html %}
+</head>
+
+<body>
+    <div class="container medium">
+        <div class="page-header text-center">
+            <h1><a href="/" class="disable">{{ site.title }}</a></h1>
+        </div>
+    </div>
+    <img src="{% if page.gambar %}{{ page.gambar | replace: 'h120', 's900' }}{% else %}{{ site.gambar | replace: 'h120', 's900' }}{% endif %}" width="100%">
+    <div class="container medium">
+        <div class="panel panel-default panel-isi">
+            <div class="panel-body">
+                <center>
+                    <h1 class="judul">{{ page.title }}</h1>
+                </center>
+                <div class="isi">
+                    {% include iklan.html %}
+                    {{ content }}
+                    {% include iklan2.html %}
+                </div>
+            </div>
+        </div>
+        {% assign satu = page.date | date: "%s" | plus: 1 | modulo: site.posts.size %}
+        {% assign dua = page.date | date: "%s" | plus: 2 | modulo: site.posts.size %}
+        {% assign tiga = page.date | date: "%s" | plus: 3 | modulo: site.posts.size %}
+        {% assign empat = page.date | date: "%s" | plus: 4 | modulo: site.posts.size %}
+        {% assign lima = page.date | date: "%s" | plus: 5 | modulo: site.posts.size %}
+        {% assign enam = page.date | date: "%s" | plus: 6 | modulo: site.posts.size %}
+        {% assign tujuh = page.date | date: "%s" | plus: 7 | modulo: site.posts.size %}
+        {% assign delapan = page.date | date: "%s" | plus: 8 | modulo: site.posts.size %}
+        <div class="row related">
+            <div class="col-sm-3">
+                <a href="{{ site.posts[satu].url }}" class="disable">
+                    <div class="panel panel-default">
+                        <img src="{{ site.posts[satu].gambar | replace: 'h120', 'w300-c-h200' }}" class="full">
+                        <div class="panel-body">
+                            <p>{{ site.posts[satu].title }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="{{ site.posts[dua].url }}" class="disable">
+                    <div class="panel panel-default">
+                        <img src="{{ site.posts[dua].gambar | replace: 'h120', 'w300-c-h200' }}" class="full">
+                        <div class="panel-body">
+                            <p>{{ site.posts[dua].title }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="{{ site.posts[tiga].url }}" class="disable">
+                    <div class="panel panel-default">
+                        <img src="{{ site.posts[tiga].gambar | replace: 'h120', 'w300-c-h200' }}" class="full">
+                        <div class="panel-body">
+                            <p>{{ site.posts[tiga].title }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="{{ site.posts[empat].url }}" class="disable">
+                    <div class="panel panel-default">
+                        <img src="{{ site.posts[empat].gambar | replace: 'h120', 'w300-c-h200' }}" class="full">
+                        <div class="panel-body">
+                            <p>{{ site.posts[empat].title }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+           </div>
+           <div class="row related">
+            <div class="col-sm-3">
+                <a href="{{ site.posts[lima].url }}" class="disable">
+                    <div class="panel panel-default">
+                        <img src="{{ site.posts[lima].gambar | replace: 'h120', 'w300-c-h200' }}" class="full">
+                        <div class="panel-body">
+                            <p>{{ site.posts[lima].title }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="{{ site.posts[enam].url }}" class="disable">
+                    <div class="panel panel-default">
+                        <img src="{{ site.posts[enam].gambar | replace: 'h120', 'w300-c-h200' }}" class="full">
+                        <div class="panel-body">
+                            <p>{{ site.posts[enam].title }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="{{ site.posts[tujuh].url }}" class="disable">
+                    <div class="panel panel-default">
+                        <img src="{{ site.posts[tujuh].gambar | replace: 'h120', 'w300-c-h200' }}" class="full">
+                        <div class="panel-body">
+                            <p>{{ site.posts[tujuh].title }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-3">
+                <a href="{{ site.posts[delapan].url }}" class="disable">
+                    <div class="panel panel-default">
+                        <img src="{{ site.posts[delapan].gambar | replace: 'h120', 'w300-c-h200' }}" class="full">
+                        <div class="panel-body">
+                            <p>{{ site.posts[delapan].title }}</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <script type="text/javascript">
+        function edit() {
+            prompt("Skrip untuk mengedit:", "subl \"{{ site.lokasi }}/{{ page.path }}\"")
+        }
+        </script>
+        <script type="text/javascript" src="/bin/jquery.min.js"></script>
+        <script type="text/javascript">
+        $("table").addClass("table")
+            .wrapAll("<div class='table-responsive'>")
+        </script>
+        <br>
+        
+        <!-- komentar facebook -->
+
+        <div id='fb-root'></div>
+        <div id='container-commentfb' style='width: 100%;'></div>
+        <br>
+        <script src='http://connect.facebook.net/en_US/all.js#xfbml=1'></script>
+        <script type="text/javascript">
+        var url = "{{ site.url }}{{ page.url }}"
+        var containercm_width = $('#container-commentfb').width();
+        $('#container-commentfb').html('<div class="fb-comments" ' +
+            'data-href="' + url + '"' +
+            ' width="' + containercm_width + '" data-num-posts="10"></div>');
+        FB.XFBML.parse();
+        </script>
+
+    </div>
+    {% include footer.html %}
+</body>
+
+</html>

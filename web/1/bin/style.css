@@ -1,0 +1,56 @@
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a.disable,
+.list-group a {
+    text-decoration: none;
+}
+
+.panel-body h1:first-child {
+    margin-top: 10px;
+}
+
+blockquote {
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.postlist img,
+.box .content img {
+    width: 100%;
+}
+
+.postlist p,
+.row .panel p {
+    margin: 0;
+}
+
+/* menyesuaikan tinggi berdasarkan lebar */
+
+.box {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.box:before {
+    content: "";
+    display: block;
+    padding-top: 67%; /*persenan tinggi berdasarkan lebar*/
+}
+
+.content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}

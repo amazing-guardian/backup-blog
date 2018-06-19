@@ -1,0 +1,140 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zen.</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="/bin/bulma.css">
+</head>
+<body>
+	<section class="hero is-dark">
+	  <div class="hero-body">
+	    <div class="container">
+	      <h1 class="title">Zen.</h1>
+	      <h2 class="subtitle">Sharing is caring.</h2>
+	    </div>
+	  </div>
+	</section>
+	<div class="tabs">
+	  <ul>
+	    <li class="tombol tombol-android"><a href="#android">Android.</a></li>
+	    <li class="tombol tombol-excel"><a href="#excel">Excel.</a></li>
+	    <li class="tombol tombol-python"><a href="#python">Python.</a></li>
+	    <li class="tombol tombol-web"><a href="#web">Web.</a></li>
+	    <li>&bull;</li>
+	    <li><a href="mailto:muhzaini30@gmail.com">Email.</a></li>
+	    <li><a href="http://facebook.com/mzaini30">Facebook.</a></li>
+	    <li><a href="http://github.com/mzaini30/tutorial">Tutorial.</a></li>
+	  </ul>
+	</div>
+	<div class="isi isi-android">
+		<div class="container">
+			{% assign rows = site.android.size | divided_by: 3.0 | ceil %}
+			{% for i in (1..rows) %}
+				{% assign offset = forloop.index0 | times: 3 %}
+				<div class="columns">
+					{% for android in site.android limit:3 offset:offset %}
+						<div class="column">
+							<div class="card">
+							  <header class="card-header">
+							    <p class="card-header-title">{{ android.judul }}</p>
+							  </header>
+							  <div class="card-content">
+							    <div class="content">{{ android.deskripsi }}</div>
+							  </div>
+							  <footer class="card-footer">
+							    <a href="{{ android.link }}" class="card-footer-item">Download.</a>
+							  </footer>
+							</div>		
+						</div>
+					{% endfor %}
+				</div>	
+			{% endfor %}
+		</div>
+	</div>
+	<div class="isi isi-excel">
+		<div class="container">
+			{% assign rows = site.excel.size | divided_by: 3.0 | ceil %}
+			{% for i in (1..rows) %}
+				{% assign offset = forloop.index0 | times: 3 %}
+				<div class="columns">
+					{% for excel in site.excel limit:3 offset:offset %}
+						<div class="column">
+							<div class="card">
+							  <header class="card-header">
+							    <p class="card-header-title">{{ excel.judul }}</p>
+							  </header>
+							  <div class="card-content">
+							    <div class="content">{{ excel.deskripsi }}</div>
+							  </div>
+							  <footer class="card-footer">
+							    <a href="{{ excel.link }}" class="card-footer-item">Download.</a>
+							  </footer>
+							</div>		
+						</div>
+					{% endfor %}
+				</div>	
+			{% endfor %}
+		</div>
+	</div>
+	<div class="isi isi-python">
+		<div class="container">
+			{% assign rows = site.python.size | divided_by: 3.0 | ceil %}
+			{% for i in (1..rows) %}
+				{% assign offset = forloop.index0 | times: 3 %}
+				<div class="columns">
+					{% for python in site.python limit:3 offset:offset %}
+						<div class="column">
+							<div class="card">
+							  <header class="card-header">
+							    <p class="card-header-title">{{ python.judul }}</p>
+							  </header>
+							  <div class="card-content">
+							    <div class="content">{{ python.deskripsi }}</div>
+							  </div>
+							  <footer class="card-footer">
+							    <a href="{{ python.link }}" class="card-footer-item">Kunjungi Skrip.</a>
+							  </footer>
+							</div>		
+						</div>
+					{% endfor %}
+				</div>	
+			{% endfor %}
+		</div>
+	</div>
+	<div class="isi isi-web">
+		<div class="container">
+			{% assign rows = site.web.size | divided_by: 3.0 | ceil %}
+			{% for i in (1..rows) %}
+				{% assign offset = forloop.index0 | times: 3 %}
+				<div class="columns">
+					{% for web in site.web limit:3 offset:offset %}
+						<div class="column">
+							<div class="card">
+							  <header class="card-header">
+							    <p class="card-header-title">{{ web.judul }}</p>
+							  </header>
+							  <div class="card-content">
+							    <div class="content">{{ web.deskripsi }}</div>
+							  </div>
+							  <footer class="card-footer">
+							    <a href="{{ web.link }}" class="card-footer-item">Kunjungi.</a>
+							  </footer>
+							</div>		
+						</div>
+					{% endfor %}
+				</div>	
+			{% endfor %}
+		</div>
+	</div>
+	<script type="text/javascript">
+		{% include jquery-3.2.1.min.js %}
+	</script>
+	<script type="text/javascript">
+		{% include app.js %}
+	</script>
+</body>
+</html>

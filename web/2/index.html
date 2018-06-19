@@ -1,0 +1,466 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+    <link rel="stylesheet" type="text/css" href="/bin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bin/materialize color.css">
+    <link rel="stylesheet" type="text/css" href="/bin/home.css">
+    <link rel="stylesheet" type="text/css" href="/bin/style.css">
+    <link rel="alternate" type="application/rss+xml" title="Zen" href="/feed.xml">
+</head>
+
+
+<body>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <center>
+                <h4><a href="/" style="color: #000;">Zen</a></h4>
+            </center>
+        </div>
+    </div>
+    <br>
+    <div class="container postlist">
+        {% if paginator.posts[0] %}
+        <a href="{{ paginator.posts[0].url }}">
+            <div class="panel panel-default">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <img src="{{ paginator.posts[0].gambar | replace: 'h120', 'w700-c-h466' }}">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel-body">
+                            <h4>{{ paginator.posts[0].title | replace: '"', '' }} <span class="badge green">{% assign hari0 = paginator.posts[0].date | date: "%a" %}
+                            {% case hari0 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></h4>
+                            <p>{{ paginator.posts[0].content | strip_html | truncatewords: 60 | escape | strip_newlines | replace: '"', '' }}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        {% endif %}
+        {% if paginator.posts[1] or paginator.posts[2] or paginator.posts[3] %}
+        <div class="row">
+            <div class="col-sm-4">
+                {% if paginator.posts[1] %}
+                <a href="{{ paginator.posts[1].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[1].gambar | replace: 'h120', 'w400-c-h266' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[1].title | replace: '"', '' }} <span class="badge green">{% assign hari1 = paginator.posts[1].date | date: "%a" %}
+                            {% case hari1 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-4">
+                {% if paginator.posts[2] %}
+                <a href="{{ paginator.posts[2].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[2].gambar | replace: 'h120', 'w400-c-h266' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[2].title | replace: '"', '' }} <span class="badge green">{% assign hari2 = paginator.posts[2].date | date: "%a" %}
+                            {% case hari2 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-4">
+                {% if paginator.posts[3] %}
+                <a href="{{ paginator.posts[3].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[3].gambar | replace: 'h120', 'w400-c-h266' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[3].title | replace: '"', '' }} <span class="badge green">{% assign hari3 = paginator.posts[3].date | date: "%a" %}
+                            {% case hari3 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% if paginator.posts[4] or paginator.posts[5] %}
+        <div class="row">
+            <div class="col-sm-6">
+                {% if paginator.posts[4] %}
+                <a href="{{ paginator.posts[4].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[4].gambar | replace: 'h120', 'w600-c-h400' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[4].title | replace: '"', '' }} <span class="badge green">{% assign hari4 = paginator.posts[4].date | date: "%a" %}
+                            {% case hari4 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-6">
+                {% if paginator.posts[5] %}
+                <a href="{{ paginator.posts[5].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[5].gambar | replace: 'h120', 'w600-c-h400' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[5].title | replace: '"', '' }} <span class="badge green">{% assign hari5 = paginator.posts[5].date | date: "%a" %}
+                            {% case hari5 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% include iklan.html %}
+        <br>
+        {% if paginator.posts[6] or paginator.posts[7] or paginator.posts[8] or paginator.posts[9] %}
+        <div class="row">
+            <div class="col-sm-3">
+                {% if paginator.posts[6] %}
+                <a href="{{ paginator.posts[6].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[6].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[6].title | replace: '"', '' }} <span class="badge green">{% assign hari6 = paginator.posts[6].date | date: "%a" %}
+                            {% case hari6 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[7] %}
+                <a href="{{ paginator.posts[7].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[7].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[7].title | replace: '"', '' }} <span class="badge green">{% assign hari7 = paginator.posts[7].date | date: "%a" %}
+                            {% case hari7 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[8] %}
+                <a href="{{ paginator.posts[8].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[8].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[8].title | replace: '"', '' }} <span class="badge green">{% assign hari8 = paginator.posts[8].date | date: "%a" %}
+                            {% case hari8 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[9] %}
+                <a href="{{ paginator.posts[9].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[9].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[9].title | replace: '"', '' }} <span class="badge green">{% assign hari9 = paginator.posts[9].date | date: "%a" %}
+                            {% case hari9 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% if paginator.posts[10] or paginator.posts[11] or paginator.posts[12] or paginator.posts[13] %}
+        <div class="row">
+            <div class="col-sm-3">
+                {% if paginator.posts[10] %}
+                <a href="{{ paginator.posts[10].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[10].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[10].title | replace: '"', '' }} <span class="badge green">{% assign hari10 = paginator.posts[10].date | date: "%a" %}
+                            {% case hari10 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[11] %}
+                <a href="{{ paginator.posts[11].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[11].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[11].title | replace: '"', '' }} <span class="badge green">{% assign hari11 = paginator.posts[11].date | date: "%a" %}
+                            {% case hari11 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[12] %}
+                <a href="{{ paginator.posts[12].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[12].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[12].title | replace: '"', '' }} <span class="badge green">{% assign hari12 = paginator.posts[12].date | date: "%a" %}
+                            {% case hari12 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[13] %}
+                <a href="{{ paginator.posts[13].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[13].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[13].title | replace: '"', '' }} <span class="badge green">{% assign hari13 = paginator.posts[13].date | date: "%a" %}
+                            {% case hari13 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+        {% if paginator.posts[14] or paginator.posts[15] or paginator.posts[16] or paginator.posts[17] %}
+        <div class="row">
+            <div class="col-sm-3">
+                {% if paginator.posts[14] %}
+                <a href="{{ paginator.posts[14].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[14].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[14].title | replace: '"', '' }} <span class="badge green">{% assign hari14 = paginator.posts[14].date | date: "%a" %}
+                            {% case hari14 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[15] %}
+                <a href="{{ paginator.posts[15].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[15].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[15].title | replace: '"', '' }} <span class="badge green">{% assign hari15 = paginator.posts[15].date | date: "%a" %}
+                            {% case hari15 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[16] %}
+                <a href="{{ paginator.posts[16].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[16].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[16].title | replace: '"', '' }} <span class="badge green">{% assign hari16 = paginator.posts[16].date | date: "%a" %}
+                            {% case hari16 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-sm-3">
+                {% if paginator.posts[17] %}
+                <a href="{{ paginator.posts[17].url }}">
+                    <div class="panel panel-default">
+                        <img src="{{ paginator.posts[17].gambar | replace: 'h120', 'w300-c-h200' }}">
+                        <div class="panel-body">
+                            <p>{{ paginator.posts[17].title | replace: '"', '' }} <span class="badge green">{% assign hari17 = paginator.posts[17].date | date: "%a" %}
+                            {% case hari17 %}
+                                {% when "Mon" %}Senin
+                                {% when "Tue" %}Selasa
+                                {% when "Wed" %}Rabu
+                                {% when "Thu" %}Kamis
+                                {% when "Fri" %}Jumat
+                                {% when "Sat" %}Sabtu
+                                {% when "Sun" %}Minggu
+                            {% endcase %}
+                            </span></p>
+                        </div>
+                    </div>
+                </a>
+                {% endif %}
+            </div>
+        </div>
+        {% endif %}
+
+        {% include iklan2.html %}
+        <br>
+
+        {% if paginator.next_page %}
+            <p><a class="btn btn-success disable full" href="{{ paginator.next_page_path }}" role="button">Next Posts &rarr;</a></p>
+        {% endif %}
+        <br>
+
+    </div>
+            
+    {% include footer.html %}
+</body>
+
+</html>

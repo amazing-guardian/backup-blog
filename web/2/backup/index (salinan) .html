@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zen</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="/bin/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/bin/home.css">
+    <link rel="stylesheet" type="text/css" href="/bin/style.css">
+    <link rel="alternate" type="application/rss+xml" title="Zen" href="/feed.xml">
+    <script type="text/javascript">
+        postingan = [{% for post in paginator.posts %}{
+            "url": "{{ post.url }}",
+            "gambar1": "{{ post.gambar | replace: 'h120', 'w700-c-h466' }}",
+            "gambar2": "{{ post.gambar | replace: 'h120', 'w600-c-h400' }}",
+            "gambar3": "{{ post.gambar | replace: 'h120', 'w400-c-h266' }}",
+            "gambar4": "{{ post.gambar | replace: 'h120', 'w300-c-h200' }}",
+            "judul": "{{ post.title | replace: '"', '' }}",
+            "isi": "{{ post.content | strip_html | truncatewords: 60 | escape | strip_newlines | replace: '"', '' }}"
+        },{% endfor %}]
+    </script>
+    <script type="text/javascript" src="/bin/jquery.min.js"></script>
+</head>
+
+
+<body>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <center>
+                <h4><a href="/" style="color: #000;">Zen</a></h4>
+            </center>
+        </div>
+    </div>
+    <br>
+    <div class="container postlist">
+        <a class="postingan1" href="">
+            <div class="panel panel-default">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <img src="">
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="panel-body">
+                            <h4></h4>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </a>
+        <script type="text/javascript">
+            if (postingan[0] == undefined) {$(".postingan1").hide()}
+            $(".postingan1").attr("href", postingan[0].url)
+            $(".postingan1 img").attr("src", postingan[0].gambar1)
+            $(".postingan1 h4").text(postingan[0].judul)
+            $(".postingan1 p").text(postingan[0].isi)
+        </script>
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="postingan2" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[1] == undefined) {$(".postingan2").hide()}
+                    $(".postingan2").attr("href", postingan[1].url)
+                    $(".postingan2 img").attr("src", postingan[1].gambar3)
+                    $(".postingan2 p").text(postingan[1].judul)
+                </script>
+            </div>
+            <div class="col-sm-4">
+                <a class="postingan3" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[2] == undefined) {$(".postingan3").hide()}
+                    $(".postingan3").attr("href", postingan[2].url)
+                    $(".postingan3 img").attr("src", postingan[2].gambar3)
+                    $(".postingan3 p").text(postingan[2].judul)
+                </script>
+            </div>
+            <div class="col-sm-4">
+                <a class="postingan4" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[3] == undefined) {$(".postingan4").hide()}
+                    $(".postingan4").attr("href", postingan[3].url)
+                    $(".postingan4 img").attr("src", postingan[3].gambar3)
+                    $(".postingan4 p").text(postingan[3].judul)
+                </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <a class="postingan5" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[4] == undefined) {$(".postingan5").hide()}
+                    $(".postingan5").attr("href", postingan[4].url)
+                    $(".postingan5 img").attr("src", postingan[4].gambar2)
+                    $(".postingan5 p").text(postingan[4].judul)
+                </script>
+            </div>
+            <div class="col-sm-6">
+                <a class="postingan6" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[5] == undefined) {$(".postingan6").hide()}
+                    $(".postingan6").attr("href", postingan[5].url)
+                    $(".postingan6 img").attr("src", postingan[5].gambar2)
+                    $(".postingan6 p").text(postingan[5].judul)
+                </script>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3">
+                <a class="postingan7" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[6] == undefined) {$(".postingan7").hide()}
+                    $(".postingan7").attr("href", postingan[6].url)
+                    $(".postingan7 img").attr("src", postingan[6].gambar4)
+                    $(".postingan7 p").text(postingan[6].judul)
+                </script>
+            </div>
+            <div class="col-sm-3">
+                <a class="postingan8" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[7] == undefined) {$(".postingan8").hide()}
+                    $(".postingan8").attr("href", postingan[7].url)
+                    $(".postingan8 img").attr("src", postingan[7].gambar4)
+                    $(".postingan8 p").text(postingan[7].judul)
+                </script>
+            </div>
+            <div class="col-sm-3">
+                <a class="postingan9" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[8] == undefined) {$(".postingan9").hide()}
+                    $(".postingan9").attr("href", postingan[8].url)
+                    $(".postingan9 img").attr("src", postingan[8].gambar4)
+                    $(".postingan9 p").text(postingan[8].judul)
+                </script>
+            </div>
+            <div class="col-sm-3">
+                <a class="postingan10" href="">
+                    <div class="panel panel-default">
+                        <img src="">
+                        <div class="panel-body">
+                            <p></p>
+                        </div>
+                    </div>
+                </a>
+                <script type="text/javascript">
+                    if (postingan[9] == undefined) {$(".postingan10").hide()}
+                    $(".postingan10").attr("href", postingan[9].url)
+                    $(".postingan10 img").attr("src", postingan[9].gambar4)
+                    $(".postingan10 p").text(postingan[9].judul)
+                </script>
+            </div>
+        </div>
+
+        {% if paginator.next_page %}
+            <p><a class="btn btn-default disable full" href="{{ paginator.next_page_path }}" role="button">Next Posts &rarr;</a></p>
+        {% endif %}
+        <br>
+
+    </div>
+            
+    {% include footer.html %}
+</body>
+
+</html>

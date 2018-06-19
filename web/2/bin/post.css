@@ -1,0 +1,102 @@
+a,
+a:hover,
+a:visited,
+a:active {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a.disable,
+.list-group a {
+    text-decoration: none;
+}
+
+.page-header {
+    border-bottom: none;
+}
+
+.panel-body h1:first-child {
+    margin-top: 10px;
+}
+
+.panel-isi {
+    padding-bottom: 25px;
+    border: none;
+    box-shadow: none;
+}
+
+blockquote {
+    margin-bottom: 20px;
+}
+
+.row .panel p {
+    margin: 0;
+}
+
+.isi {
+    max-width: 740px;
+    margin: auto;
+}
+
+.panel ol,
+.panel ul {
+    margin-bottom: 20px;
+}
+
+.panel p,
+.panel li {
+    font-size: 15px;
+}
+
+.panel p {
+    margin: 0 0 20px;
+}
+
+.panel li p {
+    margin: 0 0 10px;
+}
+
+.panel h1,
+.panel h2,
+.panel h3,
+.panel h4,
+.panel h5,
+.panel h6 {
+    margin: 30px 0 20px;
+}
+
+.panel pre {
+    margin-bottom: 20px;
+}
+
+.panel li pre {
+    margin-bottom: 10px;
+}
+
+hr {
+    margin-top: 0;
+}
+
+.btn {
+    margin-bottom: 4px;
+}
+
+pre {
+    word-break: normal;
+}
+
+pre.highlight {
+    word-break: break-all;
+}
+
+img.full {
+    width: 100%;
+}
+
+.tengah {
+    text-align: center;
+}
+
+.kanan {
+    text-align: right;
+}
