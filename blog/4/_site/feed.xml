@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title></title>
+    <description>Senyumlah :)</description>
+    <link>http://muhammadzaini.com/</link>
+    <atom:link href="http://muhammadzaini.com/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 19 Sep 2018 08:11:49 +0800</pubDate>
+    <lastBuildDate>Wed, 19 Sep 2018 08:11:49 +0800</lastBuildDate>
+    <generator>Jekyll v3.0.1</generator>
+      
+    
+    <item>
+        <title>Kamu adalah Angka</title>
+        <description>&lt;dl&gt;
+  &lt;dt&gt;```teks&lt;/dt&gt;
+  &lt;dt&gt;Ingatkah kau saat aku bertemu denganmu?&lt;/dt&gt;
+  &lt;dt&gt;Ya, kamu adalah kumpulan dari berbagai rumus rumit logaritma yang dipadukan dengan trigonometri&lt;/dt&gt;
+  &lt;dt&gt;Perasaanku saat dipandang olehmu&lt;/dt&gt;
+  &lt;dd&gt;bagaikan merosot di landaian grafik kosinus&lt;/dd&gt;
+&lt;/dl&gt;
+
+&lt;p&gt;~ fyuuuuusss…&lt;/p&gt;
+
+&lt;p&gt;Ingin kulebih mendalam lagi mempelajari logaritma
+Supaya aku
+Bisa menghitungmu di rasi-rasi bintang&lt;/p&gt;
+
+&lt;p&gt;Aku
+Tentu saja akan selalu dekat denganmu
+Walaupun
+Tingkah lakumu serumit kalkulus&lt;/p&gt;
+
+&lt;p&gt;Ya,
+Walaupun emosimu tidak pasti seperti nilai pi
+Walaupun ekspresi wajahmu kadang mudah ditebak seperti hipotenusa dalam teorema pythagoras&lt;/p&gt;
+
+&lt;p&gt;Aku akan selalu di sini&lt;/p&gt;
+
+&lt;p&gt;Bersamamu
+```&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Feb 2018 02:09:49 +0800</pubDate>
+        
+        <link>/2018/02/26/kamu-adalah-angka.html</link>
+          
+        
+            <category>puisi</category>
+        
+            <category>romantis</category>
+        
+          
+        
+            <category>puisi</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Bagaimana Seharusnya Kita Mengatasi Masalah?</title>
+        <description>&lt;p&gt;Bingung menghadapi sekian banyak masalah?&lt;/p&gt;
+
+&lt;p&gt;Bingung apakah semua masalah ini ada akhirnya?&lt;/p&gt;
+
+&lt;p&gt;Bingung entah mengapa masalah ini terus saja datang?&lt;/p&gt;
+
+&lt;p&gt;Apa solusinya?&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Hadapi&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;Ya, itu saja. Hadapi.&lt;/p&gt;
+
+&lt;p&gt;Kita tidak bisa membuat masalah berhenti di kehidupan kita karena kehidupan ini sejatinya adalah masalah itu sendiri. Ya, masalah itu juga sejatinya adalah kehidupan itu sendiri. Hari demi hari, waktu demi waktu, tentu saja akan ada masalah yang datang. Maka, cara mengatasinya adalah dengan menghadapinya.&lt;/p&gt;
+
+&lt;p&gt;Lalu, mengapa kita terkadang merasa tidak bisa menghadapinya?&lt;/p&gt;
+
+&lt;p&gt;Tentu saja karena kita belum terbiasa menghadapinya.&lt;/p&gt;
+
+&lt;p&gt;Pernah kah kamu diajarkan oleh guru bahwasanya segala hal yang dilihat oleh mata kita, diinterpretasikan secara terbalik di otak? Nah, itu masalah kan? Tapi kok kita melihatnya normal-normal aja, alias merasa tidak pernah terbalik? Tentu saja karena otak kita sudah terbiasa mengatasi masalah ini sehingga oleh otak secara otomatis akan diterjemahkan dengan benar.&lt;/p&gt;
+
+&lt;p&gt;Pernah kah kamu berpikir bahwasanya ketika kita keluar dari perut ibu kita, kok kita bisa hidup? Bukannya kita selalu membutuhkan asupan makanan melalui plasenta? Yap, karena permasalahan itulah makanya bayi membiasakan diri menghadapinya dan akhirnya bisa tumbuh dan berkembang menjadi diri kita saat ini.&lt;/p&gt;
+
+&lt;p&gt;Apakah mengatasi masalah itu gampang?&lt;/p&gt;
+
+&lt;p&gt;Tentu saja tidak.&lt;/p&gt;
+
+&lt;p&gt;Terasa berat pada awalnya, namun jangan pikirkan itu. Pikirkan saja bahwa apabila kamu mengatasi masalah tersebut, maka masalah tersebut akan tuntas. Bukankah begitu? Daripada membiarkannya saja kan? Malah nggak hilang-hilang tuh masalah, justru akan bertambah dengan masalah-masalah yang lain.&lt;/p&gt;
+</description>
+        <pubDate>Mon, 26 Feb 2018 01:42:49 +0800</pubDate>
+        
+        <link>/2018/02/26/bagaimana-seharusnya-kita-mengatasi-masalah.html</link>
+          
+        
+            <category>problem solving</category>
+        
+            <category>mengatasi masalah</category>
+        
+            <category>kehidupan</category>
+        
+            <category>life</category>
+        
+          
+        
+            <category>artikel</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Membuat Related Posts dan Related Posts Berdasarkan Kategori di Jekyll</title>
+        <description>&lt;p&gt;Mempunyai blog yang basisnya Jekyll itu bisa dibilang seru. Seru karena bisa dengan leluasa membuat template, membuat gadget dan lain sebagainya. Namun, juga dibilang seru karena sulit untuk membuat gadget sesuai dengan yang kita inginkan. &lt;em&gt;Why?&lt;/em&gt; Tentu saja karena komunitas yang kurang. Lebih banyak yang menggunakan Blogspot dan Wordpress. Untuk plugin, lebih banyak di Wordpress.&lt;/p&gt;
+
+&lt;p&gt;Nah, berikut ini adalah kode untuk membuat &lt;em&gt;related posts&lt;/em&gt; di Jekyll. Yang pertama, berdasarkan kategori. Yang kedua, untuk semua postingan.&lt;/p&gt;
+
+&lt;p&gt;Assign awal:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;liquid
+{% assign random = site.time | date: &quot;%s&quot; %}
+{% assign acak_judul = page.title.size %}
+{% assign angka_postingan = page.date | date: &quot;%s&quot; | plus: random | plus: acak_judul %}
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Related posts berdasarkan kategori:&lt;/p&gt;
+
+&lt;p&gt;```html
+{% if page.category %}&lt;/p&gt;
+&lt;h1 style=&quot;color: rgb(255, 82, 82);&quot;&gt;Tulisan Menarik Lainnya dalam Kategori {{ page.category | capitalize }}&lt;/h1&gt;
+&lt;p&gt;{% assign page_kategori = site.categories[page.category] %}
+{% assign kategori_selanjutnya_1 = angka_postingan | modulo: page_kategori.size %}
+{% assign kategori_selanjutnya_2 = angka_postingan | plus: 1 | modulo: page_kategori.size %}
+{% assign kategori_selanjutnya_3 = angka_postingan | plus: 2 | modulo: page_kategori.size %}
+{% assign kategori_selanjutnya_4 = angka_postingan | plus: 3 | modulo: page_kategori.size %}
+{% assign kategori_selanjutnya_5 = angka_postingan | plus: 4 | modulo: page_kategori.size %}
+{% assign kategori_selanjutnya_6 = angka_postingan | plus: 5 | modulo: page_kategori.size %}&lt;/p&gt;
+&lt;div&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-6&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ page_kategori[kategori_selanjutnya_1].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ page_kategori[kategori_selanjutnya_1].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ page_kategori[kategori_selanjutnya_2].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ page_kategori[kategori_selanjutnya_2].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ page_kategori[kategori_selanjutnya_3].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ page_kategori[kategori_selanjutnya_3].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-6&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ page_kategori[kategori_selanjutnya_4].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ page_kategori[kategori_selanjutnya_4].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ page_kategori[kategori_selanjutnya_5].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ page_kategori[kategori_selanjutnya_5].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ page_kategori[kategori_selanjutnya_6].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ page_kategori[kategori_selanjutnya_6].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;{% endif %}
+```&lt;/p&gt;
+
+&lt;p&gt;Related posts semua postingan:&lt;/p&gt;
+
+&lt;p&gt;```html&lt;/p&gt;
+&lt;h1 style=&quot;color: rgb(0, 121, 107);&quot;&gt;Baca Juga Ya&lt;/h1&gt;
+&lt;p&gt;{% assign postingan_selanjutnya_1 = angka_postingan | modulo: site.posts.size %}
+{% assign postingan_selanjutnya_2 = angka_postingan | plus: 1 | modulo: site.posts.size %}
+{% assign postingan_selanjutnya_3 = angka_postingan | plus: 2 | modulo: site.posts.size %}
+{% assign postingan_selanjutnya_4 = angka_postingan | plus: 3 | modulo: site.posts.size %}
+{% assign postingan_selanjutnya_5 = angka_postingan | plus: 4 | modulo: site.posts.size %}
+{% assign postingan_selanjutnya_6 = angka_postingan | plus: 5 | modulo: site.posts.size %}&lt;/p&gt;
+&lt;div&gt;
+	&lt;div class=&quot;row&quot;&gt;
+		&lt;div class=&quot;col-sm-6&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ site.posts[postingan_selanjutnya_1].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ site.posts[postingan_selanjutnya_1].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ site.posts[postingan_selanjutnya_2].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ site.posts[postingan_selanjutnya_2].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ site.posts[postingan_selanjutnya_3].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ site.posts[postingan_selanjutnya_3].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;col-sm-6&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ site.posts[postingan_selanjutnya_4].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ site.posts[postingan_selanjutnya_4].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ site.posts[postingan_selanjutnya_5].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ site.posts[postingan_selanjutnya_5].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;a href=&quot;{{ site.posts[postingan_selanjutnya_6].url }}&quot;&gt;
+					&lt;div class=&quot;col-xs-4&quot; style=&quot;padding-right: 5px;&quot;&gt;
+						&lt;div class=&quot;kotak&quot; style=&quot;width: 100%;&quot;&gt;&lt;/div&gt;
+					&lt;/div&gt;
+					&lt;div class=&quot;col-xs-8&quot; style=&quot;padding-left: 5px;&quot;&gt;{{ site.posts[postingan_selanjutnya_6].title }}&lt;/div&gt;
+				&lt;/a&gt;
+			&lt;/div&gt;
+			&lt;br /&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;```&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Feb 2018 05:36:49 +0800</pubDate>
+        
+        <link>/2018/02/22/membuat-related-posts-dan-related-posts-berdasarkan-kategori-di-jekyll.html</link>
+          
+        
+            <category>liquid</category>
+        
+            <category>jekyll</category>
+        
+          
+        
+            <category>pemrograman</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Senja Pertama</title>
+        <description>&lt;p&gt;```teks
+Ingatkah dirimu ketika mengatakan senja kepadaku?
+Aku tak tau apa itu senja
+Hanya semburat merah
+Indah?&lt;/p&gt;
+
+&lt;p&gt;Yang aku tau hanyalah langit
+Tinggi&lt;/p&gt;
+
+&lt;p&gt;Aku tak tau apa itu indah&lt;/p&gt;
+
+&lt;p&gt;Namun…&lt;/p&gt;
+
+&lt;p&gt;Sejak kumelihat senja pertama&lt;/p&gt;
+
+&lt;p&gt;Merah
+Indah
+Hangat&lt;/p&gt;
+
+&lt;p&gt;Kuas warna-warni melingkupi hatiku
+```&lt;/p&gt;
+</description>
+        <pubDate>Thu, 22 Feb 2018 05:14:49 +0800</pubDate>
+        
+        <link>/2018/02/22/senja-pertama.html</link>
+          
+        
+            <category>cinta</category>
+        
+            <category>keindahan alam</category>
+        
+            <category>senja</category>
+        
+            <category>kenangan</category>
+        
+            <category>damai</category>
+        
+            <category>bahagia</category>
+        
+          
+        
+            <category>puisi</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Sepanjang Untaian Sajakku Kepadamu</title>
+        <description>&lt;p&gt;```teks
+Kamu
+Sebuah takdir
+Jantung berhenti berdegup
+Melewati kecanggungan ini bersamamu
+Bidadari indah yang tak sengaja
+Berjumpa orang yang biasa
+Itu adalah diriku
+Sebuah takdir
+Bersamamu&lt;/p&gt;
+
+&lt;p&gt;Apakah ini semua adalah keberuntungan?
+Jantung yang senantiasa menghidupiku
+Berhenti sedetik pertama
+Ketika kamu
+Dekat
+Di hadapanku
+Apakah ini mimpi?
+Mengapa ini semua terjadi?
+Bidadari apa yang menhampiriku ini?&lt;/p&gt;
+
+&lt;p&gt;Akan kutuliskan puisi yang sajaknya sangat panjang untuk diriku menyampaikan rasa ini kepadamu walaupun dirimu nantinya entah bagaimana akan menunjukkan rasa ini kepadaku tapi biarlah&lt;/p&gt;
+
+&lt;p&gt;Aku bahagia
+Damai
+```&lt;/p&gt;
+</description>
+        <pubDate>Tue, 20 Feb 2018 02:28:49 +0800</pubDate>
+        
+        <link>/2018/02/20/sepanjang-untaian-sajakku-kepadamu.html</link>
+          
+        
+            <category>cinta</category>
+        
+            <category>sebuah pertemuan</category>
+        
+            <category>dirimu</category>
+        
+          
+        
+            <category>puisi</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Akronim</title>
+        <description>&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;teks
+I ndah menatap langit senja
+L ampion-lampion desa perlahan meredup. Gelap
+O rang-orang mulai melahap malam panjang mereka
+V espa yang kuletakkan di sini, di sampingmu
+E ntah akan menjadi saksi bisu ataukah tidak di senja ini
+Y a, senyummu mulai mengembang, bersama tergoresnya horizon oleh jingganya awan
+O h, hanya ini yang dapat kuberikan
+U ntukmu
+&lt;/code&gt;&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Feb 2018 18:57:49 +0800</pubDate>
+        
+        <link>/2018/02/18/akronim.html</link>
+          
+        
+            <category>akronim</category>
+        
+            <category>kasih sayang</category>
+        
+          
+        
+            <category>puisi</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Mengapa Buku Disebut Sebagai Teman Duduk Terbaik Sepanjang Masa?</title>
+        <description>&lt;p&gt;Dengan apa biasa kita menghabiskan waktu-waktu senggang kita? Apakah dengan membaca Facebook, Twitter, Instagram, Blog, atau LINE? Tau nggak, bahwa ada satu hal yang itu tetap abadi sepanjang zaman? Maksudnya, kegiatan menunggu waktu luang ini, abadi sepanjang zaman. Yap, membaca buku. Ada satu istilah yang dari dulu terkenal banget. Kenalnya sih sejak saya SMP:&lt;/p&gt;
+
+&lt;blockquote class=&quot;arab&quot;&gt;
+  &lt;p&gt;خير الجلوس في زمن الكتاب&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Sebaik-baik teman duduk sepanjang masa adalah buku&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Saya tidak mengatakan ini hadits atau perkataan ulama ya. Walaupun menggunakan bahasa Arab sih. Kan, yang ngomong bahasa Arab, jadinya ya pakai bahasa Arab lah. Saya juga nggak ada ngecek sih apakah ini termasuk hadits, atsar, atau apalah itu.&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;So&lt;/em&gt;, mengapa sebaik-baik teman duduk adalah buku?&lt;/p&gt;
+
+&lt;p&gt;Coba deh kita bayangkan, pernah nggak sih buku itu membuat kamu kesal? Membuat kamu putus asa? Menceritakan kejelekanmu? Membuatmu miskin? Membuatmu rugi? Membuatmu menjadi orang yang nggak berguna? Mencampakkan kehidupanmu? Membuatmu dalam keadaan terpuruk sehingga tak mampu hidup lagi? Kok curhat ya? Hehehehe…&lt;/p&gt;
+
+&lt;p&gt;Nggak pernah kan buku melakukan itu semua?&lt;/p&gt;
+
+&lt;p&gt;Bukankah buku membuatmu menjadi lebih cerdas? Lebih bijak? Lebih paham situasi? Lebih bisa mengambil keputusan? Menemani setiap kesepianmu? Membuatmu lebih bijaksana lagi? Membuatmu bahagia? Membuatmu mengenal orang-orang saleh? Membuatmu mengenal surga, mengenal Allah, mengenal Islam, mengenal kehidupan abadi? Bukankah buku membuatmu menjadi lebih baik?&lt;/p&gt;
+
+&lt;p&gt;Buku itu unik. Kamu nggak perlu media canggih untuk membacanya. Kamu nggak perlu laptop seperti biasanya menonton film. Kamu nggak perlu internet seperti biasanya kamu menonton ceramah Syaikh Hanan Attaki di Youtube. Kamu nggak perlu HP canggih. Kamu nggak perlu LCD. Kamu nggak perlu berbagai peralatan canggih. Yang kamu perlukan hanyalah lembaran-lembaran kertas dengan wangi yang khas dan kemauan untuk membacanya.&lt;/p&gt;
+
+&lt;p&gt;Memang terlihat cukup primitif dan kuno namun di situlah letak keindahannya, di situlah letak estetisnya. Tidaklah kita mengatakan bahwa coretan-coretan warna di berbagai tempat sebagai keindahan bila kehilangan esensi dan eksistensinya, bahkan, ruang putih, kosong, nan hampa, disulap menjadi maestro karya seni di tangan Steve Jobs.&lt;/p&gt;
+
+&lt;p&gt;Dalam hening, dalam sunyi, buku kita baca. Dalam rintik-rintik hujan, maupun dalam malam dingin, buku menemani kesendirian kita. Atau, ketika dalam ramai, tatkala mulut-mulut saling beradu mencurahkan celotehannya, kita pun membukukan kehidupan kita dalam keseharian kita. Suatu kebahagiaan. Suatu keceriaan. Suatu kesenangan.&lt;/p&gt;
+
+&lt;p&gt;Buku.&lt;/p&gt;
+
+&lt;p&gt;Suatu benda yang agung namun kehilangan peminatnya. Sesuatu pembendaharaan yang sangat berharga namun sudah lepas dari para fansnya. Sesuatu yang bisa dikatakan &lt;em&gt;snacknya&lt;/em&gt; para ulama dan ilmuan zaman keemasan Islam namun menjadi sesuatu yang disia-siakan hari ini.&lt;/p&gt;
+
+&lt;p&gt;Tahukah kita apa itu ayat pertama yang turun di dalam Quran? Yaps, surat Al Alaq yang dimulai dengan perintah membaca:&lt;/p&gt;
+
+&lt;blockquote class=&quot;arab&quot;&gt;
+  &lt;p&gt;اقرأ باسم ربك الذي خلق&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Bacalah dengan nama Tuhanmu yang menciptakan&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Tahukah kita makhluk apakah yang pertama kali diciptakan? Yaps, pena. Dengan pena itulah Allah memerintahkan kepadanya untuk menuliskan takdir seluruh makhluk ciptaannya dari awal pertama kali diciptakan hingga kehancuran segala sesuatunya yang kita sebut sebagai kiamat. Nah, dari situ, bukankah kita sudah memahami betapa agungnya dan betapa mulianya kegiatan baca-tulis, atau biasa kita sebut sebagai kegiatan &lt;em&gt;tolabul ilmi&lt;/em&gt; ini.&lt;/p&gt;
+
+&lt;p&gt;Nah, coba kita mulai ambil buku yang terdekat dengan kita, lalu mulailah bercengkrama dengannya. Semoga kalian akrab :)&lt;/p&gt;
+</description>
+        <pubDate>Sun, 18 Feb 2018 06:00:49 +0800</pubDate>
+        
+        <link>/2018/02/18/mengapa-buku-disebut-sebagai-teman-duduk-terbaik-sepanjang-masa.html</link>
+          
+        
+            <category>buku</category>
+        
+            <category>bookaholic</category>
+        
+            <category>pecinta buku</category>
+        
+            <category>introvert</category>
+        
+          
+        
+            <category>artikel</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Simfoni</title>
+        <description>&lt;p&gt;```teks
+/do/
+Melihat tuts-tuts putih-hitam selalu mengingatkanku
+Senyum, gembira, ceria
+Kau tak hilang dari benakku&lt;/p&gt;
+
+&lt;p&gt;/re/
+Jemari bergerak riang
+Tatkala melodi-melodi indah merasuki imajiku
+Riang&lt;/p&gt;
+
+&lt;p&gt;/mi/
+Bait-bait Chopin semakin lama semakin berani
+Segala anganku tentangmu
+Senyummu
+Impianmu
+Melebur dalam alunan nadaku&lt;/p&gt;
+
+&lt;p&gt;/fa/
+Berada di puncak tertinggi
+Formasi awan Cirrus yang hendak menggapai gugus Sagitarius
+Begitulah aku
+Ingin menggapaimu
+Kau tersenyum&lt;/p&gt;
+
+&lt;p&gt;/sol/
+Nada mulai melambat
+Turun
+Metronome mulai lelah
+Begitu pun aku&lt;/p&gt;
+
+&lt;p&gt;/la/
+Anganku tentangmu mulai pudar
+Tanganku tak mampu lagi menggapai tanganmu
+Mulai melenyap&lt;/p&gt;
+
+&lt;p&gt;/si/
+…
+```&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Feb 2018 19:49:49 +0800</pubDate>
+        
+        <link>/2018/02/17/simfoni.html</link>
+          
+        
+            <category>simfoni</category>
+        
+          
+        
+            <category>puisi</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Jangan Kebanyakan Bengong, Bro! Act Now!</title>
+        <description>&lt;p&gt;Bosan? Bingung mau ngapain? Ambil Quran, ngaji.&lt;/p&gt;
+
+&lt;p&gt;Simpel kan?&lt;/p&gt;
+
+&lt;p&gt;Ingat kawan, bahwasanya jam terus berdetak. Kalau ada yang punya jam dinding, coba lihat deh, tuh, gerak terus kan detiknya. Kalau punya HP, yang canggih-canggih itu tuh, lihat deh, gerak terus juga kan jamnya? Nah, terus, untuk apa kita menghabiskan waktu berlama-lama tanpa bergerak? Nggak bosan? Nggak merasa ada yang salah? Nggak merasa bahwa ada banyak tugas yang perlu diselesaikan?&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Tugas kita sesungguhnya lebih panjang daripada usia kita&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Ayo dong, segera lakukan sesuatu. Buat perbaikan. Pelajari banyak hal baru. Kembangkan ide-ide baru. Buat tulisan-tulisan yang akan mendobrak peradaban. Buatlah rekaman sebagai perlawanan atas kezaliman yang meraja lela. Tunjukkan kepedulianmu pada orang-orang yang lemah tak berdaya, kepada mereka yang nggak mampu, kepada mereka yang kesusahan membeli beras &lt;em&gt;impor&lt;/em&gt;, kepada mereka yang terbiasa makan sagu namun dipaksa makan nasi yang &lt;em&gt;mahal&lt;/em&gt;. Ayo dong, buatlah perubahan. Jadikan dunia ini menjadi lebih indah.&lt;/p&gt;
+
+&lt;p&gt;Jangan mengeluh. Jangan khawatir pada ketidakpastian yang saat ini berputar-putar dalam anganmu.&lt;/p&gt;
+
+&lt;p&gt;Lihat deh, jam terus berdetak, malaikat senantiasa mencatat setiap amalmu, berang-berang terus saja mengumpulkan kayu-kayu kering, kucing-kucing terus-terusan berlari ke sana ke mari, tikus-tikus senantiasa bersembunyi dan &lt;em&gt;sprint&lt;/em&gt; menghindari kucing nakal. Sedangkan diri kita? Berdiam diri saja? Itukah yang disebut sebagai &lt;em&gt;puncak evolusi&lt;/em&gt; oleh Charles Darwin? Apakah berdiamnya kita ini adalah sebagai ciri kita sebagai &lt;em&gt;khalifah&lt;/em&gt; yang telah dipercaya oleh Allah &lt;em&gt;subhanahu wa taala&lt;/em&gt;. Yuk, buatlah perubahan. Tunjukkan bahwa generasi zaman &lt;em&gt;now&lt;/em&gt; harus lebih baik daripada generasi zaman &lt;em&gt;old&lt;/em&gt;. Bukankah &lt;strong&gt;hari ini harus lebih baik daripada hari kemarin&lt;/strong&gt;?&lt;/p&gt;
+
+&lt;p&gt;Ingatlah selalu bahwasanya aliran-aliran sesat dan menyimpang terus bergerak, bergentayangan, dan menghantui sendi-sendi kehidupan kita, bermasyarakat dan bernegara. PKI, teroris, khawarij, naqsabandiyah, lia eden, kapitalis, sosialis, liberalis, hedonis, LGBT, materialis, semua kelompok-kelompok tersebut terus membangun kekuatan, menguatkan kepercayaan anggotanya, menyebarkan propagandanya, menghadirkan imaji-imaji ideologinya di bumi tercinta ini. Apakah kita mau kehidupan kita yang damai ini dirusak? Tentu tidak. &lt;em&gt;So&lt;/em&gt;, mengapa kita diam saja? Setidaknya, lakukanlah sesuatu. Entah itu membaca buku atau berlatih menyusun kekuatan.&lt;/p&gt;
+</description>
+        <pubDate>Sat, 17 Feb 2018 03:30:49 +0800</pubDate>
+        
+        <link>/2018/02/17/jangan-kebanyakan-bengong-bro-act-now.html</link>
+          
+        
+            <category>tindakan nyata</category>
+        
+            <category>aksi</category>
+        
+          
+        
+            <category>artikel</category>
+        
+          
+      </item>
+    
+    <item>
+        <title>Trik Resize Ukuran Gambar dengan Blogspot</title>
+        <description>&lt;p&gt;Mau &lt;em&gt;resize&lt;/em&gt; gambar tapi nggak punya aplikasi canggih macam Photoshop, Corel Draw, Inkscape, GIMP? Oke, jangan khawatir. Kamu bisa kok menggunakan akun Blogspotmu untuk &lt;em&gt;meresize&lt;/em&gt; gambar. Ikuti tutorialnya ya…&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Upload gambar yang kamu punya ke postingan blog seperti biasa.&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;https://s25.postimg.org/roqf4s1vj/Screenshot_from_2018-02-16_16_47_16.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Klik kanan gambar tersebut lalu pilih &lt;code class=&quot;highlighter-rouge&quot;&gt;Salin Lokasi Gambar&lt;/code&gt;.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Maka, kamu akan mendapatkan link berikut: &lt;em&gt;https://lh3.googleusercontent.com/-LzUKOslCX9A/WoaaTNzMaOI/AAAAAAAACzU/V6Wbetktx0kg-bFgiX_QTfe_G3rsUFUvACLcBGAs/&lt;code class=&quot;highlighter-rouge&quot;&gt;h120&lt;/code&gt;/2c2c8d8c9824.original.jpeg&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Nah, sekarang perhatikan di bagian &lt;code class=&quot;highlighter-rouge&quot;&gt;h120&lt;/code&gt;. Bagian tersebut adalah kode untuk menentukan lebar maupun tinggi dari gambar. Di bawah ini adalah tabel untuk memahami bagian tersebut:&lt;/p&gt;
+
+    &lt;table&gt;
+      &lt;thead&gt;
+        &lt;tr&gt;
+          &lt;th&gt;Dimensi&lt;/th&gt;
+          &lt;th&gt;Kode&lt;/th&gt;
+          &lt;th&gt;Contoh&lt;/th&gt;
+        &lt;/tr&gt;
+      &lt;/thead&gt;
+      &lt;tbody&gt;
+        &lt;tr&gt;
+          &lt;td&gt;lebar&lt;/td&gt;
+          &lt;td&gt;w&lt;/td&gt;
+          &lt;td&gt;w1200&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;tinggi&lt;/td&gt;
+          &lt;td&gt;h&lt;/td&gt;
+          &lt;td&gt;h360&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;em&gt;crop&lt;/em&gt; berdasarkan lebar&lt;/td&gt;
+          &lt;td&gt;w dan c&lt;/td&gt;
+          &lt;td&gt;w1200-c&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+          &lt;td&gt;&lt;em&gt;crop&lt;/em&gt; berdasarkan tinggi&lt;/td&gt;
+          &lt;td&gt;h dan c&lt;/td&gt;
+          &lt;td&gt;h360-c&lt;/td&gt;
+        &lt;/tr&gt;
+      &lt;/tbody&gt;
+    &lt;/table&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Ubahlah bagian tersebut dengan dimensi gambar yang kalian inginkan :)&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        <pubDate>Sat, 17 Feb 2018 00:40:49 +0800</pubDate>
+        
+        <link>/2018/02/17/resize-ukuran-gambar-dengan-blogspot.html</link>
+          
+        
+            <category>gambar</category>
+        
+            <category>trik</category>
+        
+            <category>image</category>
+        
+            <category>blogspot</category>
+        
+          
+        
+            <category>pemrograman</category>
+        
+          
+      </item>
+    
+  </channel>
+</rss>

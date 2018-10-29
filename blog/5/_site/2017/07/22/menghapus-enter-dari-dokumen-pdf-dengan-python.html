@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Menghapus Enter dari Dokumen PDF dengan Python - Zen</title>
+	<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" type="text/css" href="/bin/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="/bin/github.css">
+<link rel="stylesheet" type="text/css" href="/bin/style.css">
+
+<!-- facebook open graph -->
+
+<meta content="" property="og:site_name">
+
+  <meta content="Menghapus Enter dari Dokumen PDF dengan Python" property="og:title">
+
+
+  <meta content="article" property="og:type">
+
+
+  <meta content="Kalau menyalin tulisan dari PDF, kita suka jengkel sendiri ya. Kenapa? Soalnya tulisan-tulisan yang harusnya nggak ada enternya, karena masih satu paragraf, eh ada enternya deh pas kita salin ke Writer atau Word. Terus solusinya gimana dong? Apa hapus enternya itu satu-satu? Nggak dong. Capek. Nah, aku ada skripnya nih...." property="og:description">
+
+
+  <meta content="http://muhammadzaini.com/2017/07/22/menghapus-enter-dari-dokumen-pdf-dengan-python.html" property="og:url">
+
+
+  <meta content="2017-07-22T07:28:34+08:00" property="article:published_time">
+  <meta content="http://muhammadzaini.com/2018/01/13/about-me.html" property="article:author">
+
+
+  <meta content="http://static.zerochan.net/SeeU.full.1349249.jpg" property="og:image">
+
+
+  <meta content="pemrograman" property="article:section">
+
+
+  
+  <meta content="python" property="article:tag">
+  
+  <meta content="skrip" property="article:tag">
+  
+
+
+<!-- Twitter cards -->
+
+<meta name="twitter:site"    content="@mzaini30">
+<meta name="twitter:creator" content="@mzaini30">
+
+  <meta name="twitter:title"   content="Menghapus Enter dari Dokumen PDF dengan Python">
+
+
+
+  <meta name="twitter:description" content="Kalau menyalin tulisan dari PDF, kita suka jengkel sendiri ya. Kenapa? Soalnya tulisan-tulisan yang harusnya nggak ada enternya, karena masih satu paragraf, eh ada enternya deh pas kita salin ke Writer atau Word. Terus solusinya gimana dong? Apa hapus enternya itu satu-satu? Nggak dong. Capek. Nah, aku ada skripnya nih....">
+
+
+<meta name="twitter:card"  content="summary_large_image">
+
+<meta name="twitter:image" content="http://static.zerochan.net/SeeU.full.1349249.jpg">
+
+
+<!-- panggil jquery -->
+
+<script type="text/javascript">
+  document.writeln('<scr'+'ipt type=\"text/javascript\" src=\'/bin/jquery.min.js?'+Math.random()+'\'></scr'+'ipt>');
+</script>
+</head>
+<body>
+<div id="top"></div>
+<div class="container">
+	<div>
+	<br>
+	<center>
+		<p>
+			<a href="http://facebook.com/mzaini30" class="badge badge-default" style="background: rgb(33, 150, 243); color: white;">Facebook</a>
+			<a href="http://muhammadzaini.com/2018/02/13/blogwalking.html" class="badge badge-default" style="background: rgb(255, 87, 34); color: white;">BW</a>
+			<a href="https://api.whatsapp.com/send?phone=6281545143654" class="badge badge-default" style="background: rgb(76, 175, 80); color: white;">WA</a>
+			<a href="http://github.com/mzaini30" class="badge badge-default" style="background: rgb(158, 158, 158); color: white;">Github</a>
+			<a href="javascript:cari=prompt('Tentang apa yang mau kamu cari?');location.href='http://muhammadzaini.com/cari.html?q='+cari;" class="badge badge-default" style="background: rgb(244, 67, 54); color: white;">Cari</a>
+		</p>
+	</center>
+	<br>
+	<center>
+		<p>
+			<a href="/">
+				<img src="https://s25.postimg.org/j0yz1v5fz/judul_blog.png" style="width: 200px;">
+				<!-- font milton one from dafont -->
+			</a>
+		</p>
+	</center>
+	<br>
+	<center>
+		<p>
+			<a href="/kategori/artikel.html" class="badge badge-default" style="background: rgb(244, 67, 54); color: white;">Artikel</a>
+			<a href="/kategori/cerpen.html" class="badge badge-default" style="background: rgb(233, 30, 99); color: white;">Cerpen</a>
+			<a href="/kategori/list.html" class="badge badge-default" style="background: rgb(156, 39, 176); color: white;">List</a>
+			<a href="/kategori/musik.html" class="badge badge-default" style="background: rgb(103, 58, 183); color: white;">Musik</a>
+			<a href="/kategori/pemrograman.html" class="badge badge-default" style="background: rgb(63, 81, 181); color: white;">Pemrograman</a>
+			<a href="/kategori/puisi.html" class="badge badge-default" style="background: rgb(33, 150, 243); color: white;">Puisi</a>
+		</p>
+	</center>
+	<hr style="border-color: rgb(0, 188, 212);">
+</div>
+	<div class="row stick-parent">
+		<div class="col-sm-8 main">
+			<div>
+				<h1 style="color: rgb(0, 188, 212);">Menghapus Enter dari Dokumen PDF dengan Python</h1>
+				<p class="badge badge-default" style="background: rgb(76, 175, 80); color: white;">22 July 2017</p>
+				<p><img src="http://static.zerochan.net/SeeU.full.1349249.jpg" style="width: 100%;"></p>
+				<div class="iklan-main">
+					<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2408628281705149"
+     data-ad-slot="7670888889"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> -->
+				</div>
+				<div style="margin-top: 10px;">
+					<p>Kalau menyalin tulisan dari PDF, kita suka jengkel sendiri ya. Kenapa? Soalnya tulisan-tulisan yang harusnya nggak ada enternya, karena masih satu paragraf, eh ada enternya deh pas kita salin ke Writer atau Word. Terus solusinya gimana dong? Apa hapus enternya itu satu-satu? Nggak dong. Capek. Nah, aku ada skripnya nih.</p>
+
+<p>Jadi, cara kerjanya adalah, menggabungkan semua enter menjadi satu baris, alias menghapus semua enter. Terus gimana dong kalau ganti paragraf? Ya, tinggal kamu buat dua kali enter aja di file aslinya. Bingung kah? Langsung kita coba aja ya…</p>
+
+<ol>
+  <li>
+    <p>Buat file <code class="highlighter-rouge">enter.py</code> dan isikan skrip berikut</p>
+
+    <p>```python
+ import os, re</p>
+
+    <p>os.system(“subl input.txt”)</p>
+
+    <p>raw_input(“Tekan Enter: “)</p>
+
+    <p>file_asal = open(“input.txt”)
+ file_asal_baca = file_asal.read()</p>
+
+    <p>hasil = re.sub(r”\n\n”, r”ini adalah baris dua kali”, file_asal_baca)
+ hasil = re.sub(r”\n”, r” “, hasil)
+ hasil = re.sub(r”ini adalah baris dua kali”, r”\n”, hasil)</p>
+
+    <p>file_hasil = open(“output.txt”, “w”)
+ file_hasil.write(hasil)</p>
+
+    <p>os.system(“subl output.txt”)
+ ```</p>
+  </li>
+  <li>
+    <p>Lalu kamu jalankan dengan mengetik perintah berikut di Terminal</p>
+
+    <p><code class="highlighter-rouge">bash
+ python enter.py
+</code></p>
+  </li>
+  <li>
+    <p>Lalu akan muncul file <code class="highlighter-rouge">input.txt</code>. Misalnya saja aku mengisi dengan teks berikut</p>
+
+    <p>```
+ Pada
+ hari
+ Minggu
+ kuturut
+ ayah 
+ ke kota</p>
+
+    <p>Naik delman
+ istimewa kududuk di
+ muka</p>
+
+    <p>Kududuk samping pak kusir yang sedang
+ bekerja</p>
+
+    <p>Mengendalikan kuda
+ supaya baik jalannya
+ ```</p>
+  </li>
+  <li>
+    <p>Save (<code class="highlighter-rouge">Ctrl</code> + <code class="highlighter-rouge">S</code>)</p>
+  </li>
+  <li>
+    <p>Balik ke Terminal dengan <code class="highlighter-rouge">Alt</code> + <code class="highlighter-rouge">Tab</code> lalu tekan <code class="highlighter-rouge">Enter</code></p>
+  </li>
+  <li>
+    <p>Setelah itu akan muncul hasilnya…</p>
+
+    <p><code class="highlighter-rouge">
+ Pada hari Minggu kuturut ayah  ke kota
+ Naik delman istimewa kududuk di muka
+ Kududuk samping pak kusir yang sedang bekerja
+ Mengendalikan kuda supaya baik jalannya
+</code></p>
+  </li>
+</ol>
+
+<p>Belum punya Python? Kamu juga bisa memanfaatkan skrip serupa dengan mengunjungi <a href="http://muhammadzaini.com/enter">http://muhammadzaini.com/enter</a></p>
+
+					<p style="text-align: left;">
+						<small>Sumber gambar: <em>static.zerochan.net/SeeU.full.1349249.jpg</em></small>
+					</p>
+				</div>
+				<script type="text/javascript">
+					jQuery('pre:has(.language-teks)').css({
+						'word-break': 'normal',
+						'font-size': 'inherit',
+						'font-family': 'inherit',
+						'border': 'none',
+						'background': 'none'
+					});
+				</script>
+				<p style="text-align: left;">
+					
+						<a href="/kategori/.html" class="badge badge-default" style="background: rgb(255, 87, 34); color: white;">#pemrograman</a>
+					
+					
+						<a href="/tags/#python" class="badge badge-default" style="background: rgb(92, 107, 192); color: white;">#python</a>
+					
+						<a href="/tags/#skrip" class="badge badge-default" style="background: rgb(92, 107, 192); color: white;">#skrip</a>
+					
+					<a href="javascript:prompt('Skrip untuk mengedit tulisan: ','subl \'/media/data/web/mzaini30.github.io (git)/_posts/2017-07-21-menghapus-enter-dari-dokumen-pdf-dengan-python.md\'');void(0);" class="badge badge-default" style="background: rgb(230, 81, 0); color: white;">#edit</a>
+				</p>
+				<div class="iklan-main">
+					<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2408628281705149"
+     data-ad-slot="2792653646"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> -->
+				</div>
+				<div class="row" style="margin-top: 10px;">
+					<div class="col-xs-6" style="padding-right: 5px;">
+						<a href="https://api.whatsapp.com/send?phone=6281545143654&text=*Link*%3A%20http://muhammadzaini.com/2017/07/22/menghapus-enter-dari-dokumen-pdf-dengan-python.html%0A%0A*Komentar*%3A%0A" class="btn btn-default" style="background: rgb(76, 175, 80); color: white;">Komentar WA</a>
+					</div>
+					<div class="col-xs-6" style="padding-left: 5px;">
+						<a href="mailto:muhzaini30@gmail.com?subject=Komentar%20Blog%3A%20Menghapus Enter dari Dokumen PDF dengan Python&body=Link%3A%20http://muhammadzaini.com/2017/07/22/menghapus-enter-dari-dokumen-pdf-dengan-python.html%0A%0AKomentar%3A%0A." class="btn btn-default" style="background: rgb(244, 67, 54); color: white;">Komentar Email</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+				<h1 style="color: rgb(255, 82, 82);">Tulisan Menarik Lainnya dalam Kategori Pemrograman</h1>
+				
+				
+				
+				
+				
+				
+				
+				<div>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="row">
+								<a href="/2017/08/09/menghubungkan-domain-di-idwebhost-dengan-hosting-di-github-pages.html">
+									<div class="col-xs-4" style="padding-right: 5px;">
+										<div class="kotak" style="background-image: url(https://topvpnsoftware.com/wp-content/uploads/2017/11/hacking2.jpg);" style="width: 100%;"></div>
+									</div>
+									<div class="col-xs-8" style='padding-left: 5px;'>Menghubungkan Domain di Idwebhost dengan Hosting di Github Pages</div>
+								</a>
+							</div>
+							<br>
+							<div class="row">
+								<a href="/2017/07/30/membuat-folder-bin-path-di-linux.html">
+									<div class="col-xs-4" style="padding-right: 5px;">
+										<div class="kotak" style="background-image: url(http://images6.alphacoders.com/632/632065.jpg);" style="width: 100%;"></div>
+									</div>
+									<div class="col-xs-8" style="padding-left: 5px;">Membuat Folder BIN (Path) di Linux</div>
+								</a>
+							</div>
+							<br>
+							<div class="row">
+								<a href="/2017/07/30/css-menyesuaikan-tinggi-elemen-berdasarkan-lebarnya.html">
+									<div class="col-xs-4" style="padding-right: 5px;">
+										<div class="kotak" style="background-image: url(https://images-na.ssl-images-amazon.com/images/I/71ZDYsb%2BOCL.png);" style="width: 100%;"></div>
+									</div>
+									<div class="col-xs-8" style='padding-left: 5px;'>Pure CSS: Menyesuaikan Tinggi Elemen Berdasarkan Lebarnya</div>
+								</a>
+							</div>
+							<br>
+						</div>
+						<div class="col-sm-6">
+							<div class="row">
+								<a href="/2017/07/24/membuka-gambar-di-picasa-image-viewer-di-linux.html">
+									<div class="col-xs-4" style="padding-right: 5px;">
+										<div class="kotak" style="background-image: url(http://s-media-cache-ak0.pinimg.com/originals/15/2f/5c/152f5c60070513b1f233a74d30ae542c.png);" style="width: 100%;"></div>
+									</div>
+									<div class="col-xs-8" style='padding-left: 5px;'>Membuka Gambar di Picasa Image Viewer di Linux</div>
+								</a>
+							</div>
+							<br>
+							<div class="row">
+								<a href="/2017/07/22/menghapus-enter-dari-dokumen-pdf-dengan-python.html">
+									<div class="col-xs-4" style="padding-right: 5px;">
+										<div class="kotak" style="background-image: url(http://static.zerochan.net/SeeU.full.1349249.jpg);" style="width: 100%;"></div>
+									</div>
+									<div class="col-xs-8" style='padding-left: 5px;'>Menghapus Enter dari Dokumen PDF dengan Python</div>
+								</a>
+							</div>
+							<br>
+							<div class="row">
+								<a href="/2017/07/19/matematika-dengan-python.html">
+									<div class="col-xs-4" style="padding-right: 5px;">
+										<div class="kotak" style="background-image: url(http://pm1.narvii.com/5818/caf5f7bd39b94b5d9feee1006470616b001c7c5f_hq.jpg);" style="width: 100%;"></div>
+									</div>
+									<div class="col-xs-8" style='padding-left: 5px;'>Matematika dengan Python</div>
+								</a>
+							</div>
+							<br>
+						</div>
+					</div>
+				</div>
+			
+			<h1 style="color: rgb(0, 121, 107);">Baca Juga Ya</h1>
+			
+			
+			
+			
+			
+			
+			<div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="row">
+							<a href="/2017/10/29/sebuah-ulasan-penulis-karya-yang-namanya-tak-ingin-disebut.html">
+								<div class="col-xs-4" style="padding-right: 5px;">
+									<div class="kotak" style="background-image: url(http://lh3.googleusercontent.com/-wOgprWzik4U/WfRDT2nPbiI/AAAAAAAAClo/swcqr-8r0Esz5sLW-KpbTdrRNIMEbs__wCLcBGAs/s900/sat-subject-test-literature-tutoring-solution_134371_large.jpg);" style="width: 100%;"></div>
+								</div>
+								<div class="col-xs-8" style='padding-left: 5px;'>Sebuah Ulasan Penulis Karya yang Namanya Tak Ingin Disebut</div>
+							</a>
+						</div>
+						<br>
+						<div class="row">
+							<a href="/2017/10/28/princess-ika.html">
+								<div class="col-xs-4" style="padding-right: 5px;">
+									<div class="kotak" style="background-image: url(http://lh3.googleusercontent.com/-tGTMQP_1GZQ/WfP32cg1TEI/AAAAAAAAClY/kFxA1RN6KgoJthnzIwcypeK_eSBC6zoIgCLcBGAs/s900/character_princess_rapunzel_8320d57a.jpeg);" style="width: 100%;"></div>
+								</div>
+								<div class="col-xs-8" style="padding-left: 5px;">Princess Ika</div>
+							</a>
+						</div>
+						<br>
+						<div class="row">
+							<a href="/2017/10/28/degradasi-kualitas-manusia-modern.html">
+								<div class="col-xs-4" style="padding-right: 5px;">
+									<div class="kotak" style="background-image: url(http://lh3.googleusercontent.com/-8sI7Ee4YxuM/WfLqRni-9WI/AAAAAAAAClI/4m1PcANVXL86mw3udELB62Y4O19ecO_WQCLcBGAs/s900/philosophy.jpg);" style="width: 100%;"></div>
+								</div>
+								<div class="col-xs-8" style='padding-left: 5px;'>Degradasi Kualitas Manusia Modern (?)</div>
+							</a>
+						</div>
+						<br>
+					</div>
+					<div class="col-sm-6">
+						<div class="row">
+							<a href="/2017/10/27/jualan-belajar-menghadapi-konflik.html">
+								<div class="col-xs-4" style="padding-right: 5px;">
+									<div class="kotak" style="background-image: url(http://lh3.googleusercontent.com/-WXn6mQPTofg/WfKjs3TlmWI/AAAAAAAACk4/EGgteDdJ9YsRzV9oM76pRplo1My3XPB7gCLcBGAs/s900/THE%252BBICYCLE%252BBUSINESS%252B%252811%252Bof%252B25%2529.JPG);" style="width: 100%;"></div>
+								</div>
+								<div class="col-xs-8" style='padding-left: 5px;'>Jualan: Belajar Menghadapi Konflik</div>
+							</a>
+						</div>
+						<br>
+						<div class="row">
+							<a href="/2017/10/26/sesibuk-apapun-jangan-lupa-ngaji.html">
+								<div class="col-xs-4" style="padding-right: 5px;">
+									<div class="kotak" style="background-image: url(http://lh3.googleusercontent.com/--wKenAZuHGs/WfDG3dsrKqI/AAAAAAAACkU/RG-jY5HkqSYwkL9IBNnnKgi-5FxtKQJagCLcBGAs/s900/259a8f0f8fc6dd11e13eac79415c1e3a--quran-mosque.jpg);" style="width: 100%;"></div>
+								</div>
+								<div class="col-xs-8" style='padding-left: 5px;'>Sesibuk Apapun, Jangan Lupa Ngaji</div>
+							</a>
+						</div>
+						<br>
+						<div class="row">
+							<a href="/2017/10/25/setiap-orang-bisa-berubah.html">
+								<div class="col-xs-4" style="padding-right: 5px;">
+									<div class="kotak" style="background-image: url(http://lh3.googleusercontent.com/-d2Cm4QlHM4g/WfAKqMH2-tI/AAAAAAAACj4/kfjCvOJ5B4EUEvCWqF73I4r8DlFjNLyYgCLcBGAs/s900/ba5a54a020568e40c40dea665ada6b85c63a4cfe_hq.jpg);" style="width: 100%;"></div>
+								</div>
+								<div class="col-xs-8" style='padding-left: 5px;'>Setiap Orang Bisa Berubah</div>
+							</a>
+						</div>
+						<br>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4 sidebar">
+			<a href="#top" class="up">
+	<img src="http://4.bp.blogspot.com/-ifgZkuwnPnE/U33PmO8aLpI/AAAAAAAAAoY/CXnILaXEP88/s1600/btp.png">
+</a>
+<style type="text/css">
+	.up {
+		position: fixed;
+		right: 10px;
+		bottom: 10px;
+		background: #C0392B;
+		margin: 0;
+		padding: 10px;
+		border-radius: 2px;
+		-o-border-radius: 2px;
+		-ms-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-webkit-border-radius: 2px;
+		cursor: pointer;
+		z-index: 100;
+	}
+	.up img {
+		margin-top: 1px;
+		margin-bottom: 4px;
+	}
+</style>
+
+<div>
+	<h1 style="color: rgb(67, 160, 71);">Poster Dakwah Harian</h1>
+	<p>Dari <a href='https://mobile.facebook.com/groups/335300383280293?refid=46&__xt__=12.%7B%22unit_id_click_type%22%3A%22graph_search_results_item_tapped%22%2C%22click_type%22%3A%22result%22%2C%22module_id%22%3A2%2C%22result_id%22%3A335300383280293%2C%22session_id%22%3A%227c4b6513e3e46805bff84db766f2310f%22%2C%22module_role%22%3A%22ENTITY_GROUPS%22%2C%22unit_id%22%3A%22browse_rl%3A6ae754ff-cebd-3d4c-a8a9-24c7d634132d%22%2C%22browse_result_type%22%3A%22browse_type_group%22%2C%22unit_id_result_id%22%3A335300383280293%2C%22module_result_position%22%3A0%7D'>Muslim Designer Community</a></p>
+	<p>
+		<img src="" class="mdc-daily" style="width: 100%;">
+	</p>
+	<script type="text/javascript">
+		document.writeln('<scr'+'ipt type=\"text/javascript\" src=\'http://muhammadzaini.com/mdc-daily/data.js?'+Math.random()+'\'></scr'+'ipt>');
+		document.writeln('<scr'+'ipt type=\"text/javascript\" src=\'http://muhammadzaini.com/mdc-daily/app.js?'+Math.random()+'\'></scr'+'ipt>');
+	</script>
+	<p>
+		<a href="http://muhammadzaini.com/2018/02/12/yuk-pasang-gadget-mdc-daily-di-blog.html" class="btn btn-default" style="background: rgb(186, 104, 200); color: white;">Pasang di blog saya juga</a>
+	</p>
+</div>
+<div>
+	<h1 style="color: rgb(255, 152, 0);">Tentangku</h1>
+	<div class="embed-container">
+		<iframe src="https://www.youtube.com/embed/BzZroxr5IDQ" frameborder="0" allowfullscreen=""></iframe>
+	</div>
+	<p>Perkenalkan, nama saya adalah Zen, pemilik blog ini. Saya saat ini berprofesi sebagai <span style='color: rgb(0, 150, 136);'>guru</span> di SMA Muhammadiyah 2 Samarinda, <span style='color: rgb(245, 127, 23);'>berkuliah</span> di Universitas Mulawarman jurusan Psikologi, part time <span style='color: rgb(0, 200, 83);'>bisnis sepeda</span> di Loa Janan Samarinda, dan mengisi waktu luang dengan <em style="color: rgb(0, 184, 212);">blogging</em> di <a href=''>muhammadzaini.com</a>. Jika, ingin berkomunikasi denganku, hubungi saja di <a href='mailto:muhzaini30@gmail.com'>muhzaini30@gmail.com</a>.</p>
+	<p><a href="/2018/01/13/about-me.html" class="btn btn-default" style="background: rgb(244, 67, 54); color: white;">Lihat selengkapnya</a></p>
+</div>
+<div>
+	<h1 style="color: rgb(0, 150, 136);">Langganan Blog</h1>
+	<p><img src="https://s25.postimg.org/w4q92g2hr/blog_zen.png" alt="" /></p>
+	<p>
+		<a href="https://api.whatsapp.com/send?phone=6281545143654&text=Kak,%20langganan%20blog" class="btn btn-default" style="background: rgb(76, 175, 80); color: white;">Langganan Blog</a>
+	</p>
+</div>
+<div>
+	<h1 style="color: rgb(105, 240, 174);">Zen for Android</h1>
+	<p>
+		<img src="https://s25.postimg.org/5ah0cwaqn/Screenshot_2018-02-11-15-02-48.jpg">
+	</p>
+	<p>
+		<a href="https://play.google.com/store/apps/details?id=com.mzaini30.zen" class="btn btn-default" style="background: rgb(249, 168, 37); color: white;">Download</a>
+	</p>
+</div>
+<div>
+	<h1 style="color: rgb(255, 87, 34);">Sponsored Posts</h1>
+	<ul>
+		<li><a href='/2018/01/25/3-tempat-wisata-di-bandung-yang-wajib-dikunjungi.html'>3 Tempat Wisata di Bandung yang Wajib Dikunjungi</a> oleh <em>Airy Rooms</em></li>
+		<li><a href='/2017/07/18/ekspansi-jaringan-4g-operator-telekomunikasi-seluler-di-indonesia.html'>Ekspansi Jaringan 4G Operator Telekomunikasi Seluler di Indonesia</a> oleh <em>Traveloka</em></li>
+		<li><a href='/2018/01/27/umbul-manten-kolam-alami-jernih-di-klaten-harga-tiket-masuk-peta-lokasi.html'>Umbul Manten Kolam Alami Jernih di Klaten, Harga Tiket Masuk + Peta Lokasi</a> oleh <em>Dolan Yok</em></li>
+	</ul>
+	<a href="/2018/01/23/kerja-sama.html" class="btn btn-default" style="background: rgb(3, 169, 244); color: white;">Saya ingin bekerja sama</a>
+</div>
+<div class="partner">
+	<h1 style="color: rgb(3, 169, 244);">Partner</h1>
+	<p>Ingin pasang banner hanya 1 hari? Bisa!</p>
+	<div class="row">
+		<div class="col-xs-6" style="padding-right: 5px;">
+			<!-- Minggu, 17 Februari 2019 -->
+			<p data-habis='Sun Feb 17 2019 13:41:16 GMT+0000 (UTC)'> 
+				<a href="http://isykarima.com/">
+					<img src="https://pbs.twimg.com/profile_images/646148875183456256/MG4nhVPZ_400x400.png">
+				</a>
+			</p>
+			<p data-habis=''>
+				<a href="http://muhammadzaini.com/2018/01/23/kerja-sama.html">
+					<img src="https://s25.postimg.org/qxxoz423z/slot_iklan_2.png">
+				</a>
+			</p>
+		</div>
+		<div class="col-xs-6" style="padding-left: 5px;">
+			<p data-habis=''>
+				<a href="http://muhammadzaini.com/2018/01/23/kerja-sama.html">
+					<img src="https://s25.postimg.org/qxxoz423z/slot_iklan_2.png">
+				</a>
+			</p>
+			<p data-habis=''>
+				<a href="http://muhammadzaini.com/2018/01/23/kerja-sama.html">
+					<img src="https://s25.postimg.org/qxxoz423z/slot_iklan_2.png">
+				</a>
+			</p>
+		</div>
+	</div>
+	<script type="text/javascript">
+		sekarang = new Date();
+		$('[data-habis]').each(function(){
+			if (new Date($(this).attr('data-habis')) < sekarang){
+				$(this).find('img').attr('src', 'https://s25.postimg.org/qxxoz423z/slot_iklan_2.png');
+				$(this).find('a').attr('href', 'http://muhammadzaini.com/2018/01/23/kerja-sama.html');
+			}
+		});
+	</script>
+</div>
+<div>
+	<h1 style="color: rgb(121, 85, 72);">Tulisan Terbaru</h1>
+	
+	<div class="row">
+		<a href="/2018/02/28/archer-dan-archiever.html">
+			<div class="col-xs-4" style="padding-right: 5px;">
+				<div class="kotak" style="background-image: url(https://pm1.narvii.com/5774/ff34090cc2b26173b333c1d29294050e140c1750_hq.jpg);" style="width: 100%;"></div>
+			</div>
+			<div class="col-xs-8" style='padding-left: 5px;'>Archer dan Archiever</div>
+		</a>
+	</div>
+	<br>
+	
+	<div class="row">
+		<a href="/2018/02/27/kamu-bersama-kisah-yang-tak-lepas-darimu.html">
+			<div class="col-xs-4" style="padding-right: 5px;">
+				<div class="kotak" style="background-image: url(http://images5.fanpop.com/image/answers/2329000/2329069_1326057082372.98res_400_300.jpg);" style="width: 100%;"></div>
+			</div>
+			<div class="col-xs-8" style='padding-left: 5px;'>Kamu, Bersama Kisah yang Tak Lepas Darimu</div>
+		</a>
+	</div>
+	<br>
+	
+	<div class="row">
+		<a href="/2018/02/26/kamu-adalah-angka.html">
+			<div class="col-xs-4" style="padding-right: 5px;">
+				<div class="kotak" style="background-image: url(https://fanart.tv/fanart/tv/257764/hdtvlogo/hyouka-573a027d39d9b.png);" style="width: 100%;"></div>
+			</div>
+			<div class="col-xs-8" style='padding-left: 5px;'>Kamu adalah Angka</div>
+		</a>
+	</div>
+	<br>
+	
+	<div class="row">
+		<a href="/2018/02/26/bagaimana-seharusnya-kita-mengatasi-masalah.html">
+			<div class="col-xs-4" style="padding-right: 5px;">
+				<div class="kotak" style="background-image: url(https://vignette.wikia.nocookie.net/kancolle/images/2/25/Chitose_thinking.png/revision/latest/scale-to-width-down/632?cb=20170601114647);" style="width: 100%;"></div>
+			</div>
+			<div class="col-xs-8" style='padding-left: 5px;'>Bagaimana Seharusnya Kita Mengatasi Masalah?</div>
+		</a>
+	</div>
+	<br>
+	
+	<div class="row">
+		<a href="/2018/02/22/membuat-related-posts-dan-related-posts-berdasarkan-kategori-di-jekyll.html">
+			<div class="col-xs-4" style="padding-right: 5px;">
+				<div class="kotak" style="background-image: url(http://4.bp.blogspot.com/-nj6jol0FSec/VoptFJ_ZqiI/AAAAAAAAKig/SQ0ErYUYS0s/s1600/your_diary_kantoku_yua_anime_girl.jpg);" style="width: 100%;"></div>
+			</div>
+			<div class="col-xs-8" style='padding-left: 5px;'>Membuat Related Posts dan Related Posts Berdasarkan Kategori di Jekyll</div>
+		</a>
+	</div>
+	<br>
+	
+	<a href="/archives/" class="btn btn-default" style="background: rgb(156, 39, 176); color: white;">Lihat semua tulisan</a>
+</div>
+<div>
+	<h1 style="color: rgb(233, 30, 99);">Trafik</h1>
+	<script type="text/javascript" src="http://feedjit.com/serve/?vv=1515&amp;tft=3&amp;dd=0&amp;wid=&amp;pid=0&amp;proid=0&amp;bc=FFFFFF&amp;tc=000000&amp;brd1=012B6B&amp;lnk=135D9E&amp;hc=FFFFFF&amp;hfc=2853A8&amp;btn=C99700&amp;ww=200&amp;wne=5&amp;srefs=0"></script><noscript><a href="http://feedjit.com/">Live Traffic Stats</a></noscript>
+	<script type="text/javascript">
+		jQuery(function($){
+			$('#FJ_TF_Cont').css('margin', 'auto');
+		});
+	</script>
+</div>
+<div>
+	<h1 style="color: rgb(46, 125, 50);">Counter</h1>
+	<!-- Histats.com  (div with counter) -->
+	<center>
+		<div id="histats_counter"></div>
+	</center>
+	<!-- Histats.com  START  (aync)-->
+	<script type="text/javascript">var _Hasync= _Hasync|| [];
+	_Hasync.push(['Histats.start', '1,3995429,4,433,112,75,00011011']);
+	_Hasync.push(['Histats.fasi', '1']);
+	_Hasync.push(['Histats.track_hits', '']);
+	(function() {
+	var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+	hs.src = ('//s10.histats.com/js15_as.js');
+	(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+	})();</script>
+	<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?3995429&101" alt="" border="0"></a></noscript>
+	<!-- Histats.com  END  -->
+</div>
+<div class="iklan-sidebar">
+	<!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2408628281705149"
+     data-ad-slot="8344363229"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script> -->
+</div>
+		</div>
+	</div>
+	<hr style="border-color: rgb(68, 138, 255);">
+<center>
+	<p style="margin-bottom: 20px;">Copyright &copy; 2018 Zen All Right Reserved - Created by <a href="http://muhammadzaini.com">Zen</a></p>
+</center>
+<script type="text/javascript">
+	document.writeln('<scri'+'pt type=\"text/javascript\" src=\'/bin/hc-sticky.js?'+Math.random()+'\'></scr'+'ipt>');
+</script>
+<script type="text/javascript">
+	jQuery(function($){
+		if ($(window).width() > 768){
+			if ($('.main').height() < $('.sidebar').height()){
+				$('.main').hcSticky({
+					stickTo: '.stick-parent'
+				});
+			} else if ($('.main').height() > $('.sidebar').height()){
+				$('.sidebar').hcSticky({
+					stickTo: '.stick-parent'
+				});
+			}
+		}
+	});
+</script>
+</div>
+</body>
+</html>
