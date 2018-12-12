@@ -1,0 +1,23 @@
+title: "Zen | blog psikologi"
+
+permalink: /:year/:month/:day/:title/
+
+paginate: 10
+
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+  - jekyll-seo-tag
+  
+name: Zen
+description: Blog Psikologi
+url: https://www.muhammadzaini.com
+
+author:
+  twitter: mzaini30
+  
+timezone: Asia/Makassar
+
+viral:
+  judul: Mengolah Kecerdasan Emosi dengan Blogging
+  link: https://www.muhammadzaini.com/2018/12/04/yuk-mengolah-kecerdasan-emosi-dengan-blogging/
