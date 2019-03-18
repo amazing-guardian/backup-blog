@@ -1,0 +1,131 @@
+---
+---
+
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="/app/init.js"></script>
+	<title>{% if page.title %}{{ page.title }} - {% endif %}Zen</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/vendor/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/app/style.css">
+	<link rel="alternate" type="application/rss+xml" title="Zen" href="https://www.muhammadzaini.com/feed" />
+	<link rel="icon" href="/favicon.ico">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	{% include iklan-otomatis.html %}
+	<script type="text/javascript" src="/vendor/jquery/jquery.min.js"></script>
+</head>
+<body>
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+			        <span class="sr-only">Toggle navigation</span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			    </button>
+				<a href="/" data-lagu='' class="navbar-brand top">Zen</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      <ul class="nav navbar-nav">
+		        <li><a href="/2019/03/15/brainstorming.html">Brainstorming</a></li>
+		        <li><a href="mailto:muhzaini30@gmail.com">Email</a></li>
+		        <!-- <li><a class="buka_pokemon" href="#!">Skill</a></li> -->
+		      </ul>
+		    </div>
+		</div>
+	</div>
+
+	<div class="container-fluid">
+		<div class="jumbotron">
+			<center>
+				<h1>Zen</h1>
+				<p>Suka Koding dan Matematika</p>
+			</center>
+		</div>
+		{% if page.penulis %}
+			<style type="text/css">
+				.judul {
+					margin-top: 0;
+				}
+			</style>
+			<div class="row">
+				<div class="col-sm-2 col-sm-push-3 theia_2">
+					<div class="theiaStickySidebar">
+						<p><img src="{{ page.image }}"></p>
+					</div>
+				</div>
+				<div class="col-sm-4 col-sm-push-3 theia_2">
+					<div class="theiaStickySidebar">
+						{{ content }}
+					</div>
+				</div>
+				<div class="col-sm-3 col-sm-pull-6 theia">
+					<div class="theiaStickySidebar">
+						{% include sidebar-kiri.html %}
+					</div>
+				</div>
+				<div class="col-sm-3 theia">
+					<div class="theiaStickySidebar">
+						{% include sidebar-kanan.html %}
+					</div>
+				</div>
+			</div>
+		{% else %}
+			<div class="row">
+				<div class="col-sm-6 col-sm-push-3 theia">
+					<div class="theiaStickySidebar">
+						{{ content }}
+					</div>
+				</div>
+				<div class="col-sm-3 col-sm-pull-6 theia">
+					<div class="theiaStickySidebar">
+						{% include sidebar-kiri.html %}
+					</div>
+				</div>
+				<div class="col-sm-3 theia">
+					<div class="theiaStickySidebar">
+						{% include sidebar-kanan.html %}
+					</div>
+				</div>
+			</div>
+		{% endif %}
+		{% include iklan.html %}
+	</div>
+
+	<!-- Modal -->
+	<div class="modal fade isi_pokemon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog" role="document">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	        <h4 class="modal-title" id="myModalLabel">Skill-mu</h4>
+	      </div>
+	      <div class="modal-body">
+	        <div class="my_skill"></div>
+	        <p>Tingkatkan skill-mu dengan lebih banyak lagi membaca artikel di blog ini!!!</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
+	<!-- Button trigger modal -->
+	<!-- <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+	  Launch demo modal
+	</button> -->
+
+	<script type="text/javascript" src="/app/skill.js"></script>
+	<script type="text/javascript" src="/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/vendor/fixed/ResizeSensor.min.js"></script>
+	<script type="text/javascript" src="/vendor/fixed/theia-sticky-sidebar.min.js"></script>
+	<script type="text/javascript" src="/app/data_cari.js"></script>
+	<script type="text/javascript" src="/app/cari.js"></script>
+	<script type="text/javascript" src="/app/app.js"></script>
+</body>
+</html>

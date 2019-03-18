@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Zen</title>
+    <description>Android developer.</description>
+    <link>http://localhost:4000/</link>
+    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 16 Feb 2019 10:41:46 +0800</pubDate>
+    <lastBuildDate>Sat, 16 Feb 2019 10:41:46 +0800</lastBuildDate>
+    <generator>Jekyll v3.8.5</generator>
+      
+    
+    	<item>
+	        <title>Mau Dibawa Ke Mana Hidupmu</title>
+	        <description>&lt;p&gt;Kata orang, hidup harus punya cita-cita.&lt;/p&gt;
+
+&lt;p&gt;Kata orang, hidup harus punya tujuan.&lt;/p&gt;
+
+&lt;p&gt;Kata orang, tujuan hidup harus jelas.&lt;/p&gt;
+
+&lt;p&gt;Kata orang, jadilah orang yang berguna.&lt;/p&gt;
+
+&lt;p&gt;Kata orang, kata orang, dan kata orang.&lt;/p&gt;
+
+&lt;p&gt;Sampai kapan kita senantiasa mendengarkan apa kata orang?&lt;/p&gt;
+
+&lt;p&gt;Ketika kita bertindak tanpa mendengarkan kata orang, mereka bilang kita salah. Ketika kita bertindak tak sesuai harapan, kata orang kita salah. Ketika kita merasa bahwa kita melakukan sesuatu yang benar, kata orang kita tak benar.&lt;/p&gt;
+
+&lt;p&gt;Apa kata orang, kata orang, dan kata orang.&lt;/p&gt;
+
+&lt;p&gt;Dunia adalah segala tentang mereka, bukan tentang kita.&lt;/p&gt;
+</description>
+	        <pubDate>Sat, 16 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/16/mau-dibawa-ke-mana-hidupmu.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Rame Ing Gawe Sepi Ing Pamrih</title>
+	        <description>&lt;blockquote&gt;
+  &lt;p&gt;Rame ing gawe, sepi ing pamrih.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Dari mana datangnya galau? Galau datang ketika kita terus saja memikirkan &lt;em&gt;hasil&lt;/em&gt;. Padahal kan, menurut ungkapan Jawa di atas, yang menjadi pegangan orang-orang Jawa hingga saat ini, yang penting itu usaha maksimal. Hasil itu nggak usah dipikirin.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Ramai dalam bekerja, sepi dalam meminta pamrih.&lt;/p&gt;
+&lt;/blockquote&gt;
+</description>
+	        <pubDate>Sat, 16 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/16/rame-ing-gawe-sepi-ing-pamrih.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Membuka Current Directory Di Terminal Guake</title>
+	        <description>&lt;p&gt;Apa itu Terminal? Terminal itu sederhananya ya macam Command Prompt di Windows, cuma ini di Linux. Itu aja sih. Perbedaannya mungkin pada bahasa pemrograman yang digunakan. Kalau di Command Prompt, pakainya Windows Batch. Kalau di Linux, pakainya Bash. Nah, di tutorial ini, aku akan memberi tahu bagaimana caranya membuka Terminal pada direktori saat ini:&lt;/p&gt;
+
+&lt;h1 id=&quot;install-guake&quot;&gt;Install Guake&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Install &lt;code class=&quot;highlighter-rouge&quot;&gt;Guake&lt;/code&gt;:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; sudo apt install guake
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Setting Guake supaya jalan otomatis saat &lt;em&gt;startup&lt;/em&gt;:&lt;/p&gt;
+
+    &lt;ol&gt;
+      &lt;li&gt;Pencet &lt;code class=&quot;highlighter-rouge&quot;&gt;Windows&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Ketik &lt;code class=&quot;highlighter-rouge&quot;&gt;Session and Startup&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Pada &lt;code class=&quot;highlighter-rouge&quot;&gt;Application Autostart&lt;/code&gt;, klik &lt;code class=&quot;highlighter-rouge&quot;&gt;Add&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Pada isian &lt;code class=&quot;highlighter-rouge&quot;&gt;Name&lt;/code&gt;, ketik &lt;code class=&quot;highlighter-rouge&quot;&gt;Guake&lt;/code&gt;. Pada isian &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt;, ketik &lt;code class=&quot;highlighter-rouge&quot;&gt;guake&lt;/code&gt;&lt;/li&gt;
+      &lt;li&gt;Klik &lt;code class=&quot;highlighter-rouge&quot;&gt;OK&lt;/code&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;menambahkan-menu-guake-pada-klik-kanan-folder&quot;&gt;Menambahkan Menu Guake Pada Klik Kanan Folder&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pada Thunar (file managernya Linux Lite), pilih &lt;code class=&quot;highlighter-rouge&quot;&gt;Edit&lt;/code&gt; lalu &lt;code class=&quot;highlighter-rouge&quot;&gt;Configure custom actions...&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Pada bagian &lt;code class=&quot;highlighter-rouge&quot;&gt;Open Terminal Here&lt;/code&gt;, edit&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Lalu pada bagian &lt;code class=&quot;highlighter-rouge&quot;&gt;Command&lt;/code&gt;, isilah dengan skrip di bawah ini:&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; guake --show --new-tab&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;%f&quot;&lt;/span&gt; --execute-command&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;cd %f&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Klik &lt;code class=&quot;highlighter-rouge&quot;&gt;OK&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h1 id=&quot;cara-supaya-pencet-f4-langsung-kebuka-terminal&quot;&gt;Cara Supaya Pencet F4 Langsung Kebuka Terminal&lt;/h1&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Buka &lt;code class=&quot;highlighter-rouge&quot;&gt;Settings Manager&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Pilih &lt;code class=&quot;highlighter-rouge&quot;&gt;Appearance&lt;/code&gt; lalu &lt;code class=&quot;highlighter-rouge&quot;&gt;Settings&lt;/code&gt;. Pada bagian &lt;code class=&quot;highlighter-rouge&quot;&gt;Enable editable accelerators&lt;/code&gt;, jadikan &lt;code class=&quot;highlighter-rouge&quot;&gt;enable&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Buka Thunar&lt;/li&gt;
+  &lt;li&gt;Pilih salah satu folder&lt;/li&gt;
+  &lt;li&gt;Lalu pilih &lt;code class=&quot;highlighter-rouge&quot;&gt;File&lt;/code&gt;, pada bagian &lt;code class=&quot;highlighter-rouge&quot;&gt;Open Terminal Here&lt;/code&gt;, klik &lt;code class=&quot;highlighter-rouge&quot;&gt;F4&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+	        <pubDate>Fri, 15 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/15/membuka-current-directory-di-terminal-guake.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Cara Menambahkan Custom Css Di Blogspot</title>
+	        <description>&lt;ol&gt;
+  &lt;li&gt;Buka &lt;a href=&quot;https://www.blogger.com&quot;&gt;Blogger&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;Pilih &lt;code class=&quot;highlighter-rouge&quot;&gt;Tema&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Pilih &lt;code class=&quot;highlighter-rouge&quot;&gt;Sesuaikan&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Pilih &lt;code class=&quot;highlighter-rouge&quot;&gt;Lanjutan&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Pilih &lt;code class=&quot;highlighter-rouge&quot;&gt;Tambahkan CSS&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;Masukkkan CSS &lt;em&gt;custom&lt;/em&gt; yang kamu buat ke kolom isian yang disediakan&lt;/li&gt;
+  &lt;li&gt;Klik &lt;code class=&quot;highlighter-rouge&quot;&gt;Terapkan ke Blog&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+	        <pubDate>Fri, 15 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/15/cara-menambahkan-custom-css-di-blogspot.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Ketika Sangat Berat Untuk Melepaskan</title>
+	        <description>&lt;p&gt;Ada awal, ada akhir. Ada ikatan, ada melepaskan. Itulah kehidupan.&lt;/p&gt;
+
+&lt;p&gt;Terkadang kita sangat berat untuk melepaskan. Beraaaaat banget. Karena sudah banyak memori yang tercipta dari ikatan, dan interaksi yang sangat intens antara kita. Apakah aku bisa melepaskan? Apakah kita bisa saling terpisah?&lt;/p&gt;
+
+&lt;p&gt;Hadapi masa depan dengan optimis apapun perasaanmu saat ini.&lt;/p&gt;
+</description>
+	        <pubDate>Thu, 14 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/14/ketika-sangat-berat-untuk-melepaskan.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Cara Mudah Membuat Aplikasi Desktop Dengan Php</title>
+	        <description>&lt;p&gt;Terkadang yang namanya developer nggak bisa ya merangkap segala keahlian developing. Ada yang jagonya cuma di Python, ada yang di Ruby, Javascript, Rust, Cassandra, PHP, ASP, C#, Julia, R sehingga terkadang kalau yang biasa membuat aplikasi di satu jenis, agak kesusahan membuat aplikasi dalam bentuk lain. Misalnya aja biasa buat aplikasi website, eh ternyata klien meminta dibuatkan aplikasi desktop. Duh, gimana cara buatnya ya?&lt;/p&gt;
+
+&lt;p&gt;Nah, untunya waktu itu pas aku eksperimen dengan PHP, aku dapat skripnya nih untuk membuat aplikasi desktop berbasis PHP dan tidak membutuhkan &lt;em&gt;third party&lt;/em&gt; lainnya yang malah akan membuat &lt;em&gt;size&lt;/em&gt; aplikasi kita membengkak. Yang kita butuhkan di sini cuma &lt;em&gt;standalone PHP&lt;/em&gt;:&lt;/p&gt;
+
+&lt;p&gt;Sebelumnya, letakkan PHP &lt;em&gt;standalone&lt;/em&gt; di D:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;@echo off
+
+&lt;span class=&quot;nb&quot;&gt;set &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;port&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;8956
+
+start chrome http://localhost:%port%
+
+D:&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;hp&lt;span class=&quot;se&quot;&gt;\p&lt;/span&gt;hp -S localhost:%port%
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+</description>
+	        <pubDate>Thu, 14 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/14/cara-mudah-membuat-aplikasi-desktop-dengan-php.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Jangan Bandingkan Aku Dengan Orang Lain</title>
+	        <description>&lt;p&gt;Bukannya nggak ingin maju. Bukannya nggak ingin lebih baik.&lt;/p&gt;
+</description>
+	        <pubDate>Thu, 14 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/14/jangan-bandingkan-aku-dengan-orang-lain.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Pengalaman Menggunakan Linux Lite</title>
+	        <description>&lt;p&gt;Apa itu Linux? Gampangannya sih temennya Windwos. Jadi kayak semacam Windows tapi bukan Windows. Heheheeh. Kalau Windows kan bisa terkena virus, kalau Linux nggak.&lt;/p&gt;
+
+&lt;p&gt;Kalau secara resminya, Linux itu Kernel, OS-nya namanya GNU, terus distro yang lagi kupakai namanya Linux Lite. Distro itu bahasa Linuxnya untuk distribution. Ada banyak distro di jagat GNU/Linux (untuk seterusnya kusebut Linux aja). Beberapa yang sudah kupakai adalah Kali Linux yang biasa untuk hacking, Linux Mint yang tampilannya mirip-mirip Windows, dan Elementary OS yang tampilannya mirip Mac OS X.&lt;/p&gt;
+
+&lt;p&gt;Nah, setelah mengenal Linux sebagai Kernel, GNU sebagai OS, dan Linux Lite sebagai distro, ada istilah lagi nih yaitu Desktop Environment. Ya macam tampilannya gitu. Kalau nggak ada Desktop Environment, Linux jadinya cuma macam papan hitam bertuliskan warna putih macam papan tulis gitu. Kalau Linux Lite ini Desktop Environmentnya namanya XFCE yang terkenal paling ringan.&lt;/p&gt;
+
+&lt;p&gt;Oh iya, Linux Lite ini berbasiskan pada distro Ubuntu sedangkan Ubuntu berbasiskan pada distro Debian, berbeda dengan Manjaro yang berbasiskan pada distro Arch Linux.&lt;/p&gt;
+
+&lt;p&gt;Jadi, apa alasanku menggunakan Linux Lite? Lebih tepatnya sih dual boot sama Windows:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Cepat&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Dibandingkan distro-distro lainnya, Linux Lite ini bisa dibilang masuk kategori cepat. Bootingnya lumayan cepat. Terus juga ketika membuka aplikasi nyaris tanpa loading, kecuali Firefox yang agak loading sedikit tapi lebih cepat dibandingkan distro lainnya, apalagi jika dibandingkan dengan Windows. Terus kalau mau membuka aplikasi, cukup pencet tombol Windows (Super) lalu ketikkan nama aplikasi yang ingin dibuka. Cukup ketik sebagian aja. Apalagi didukung oleh kemampuan mengetik 10 jari. Wah, macam hacker aja.&lt;/p&gt;
+
+    &lt;p&gt;Termasuk perbedaan kecepatan yang kurasakan adalah ketika akan menjalankan Jekyll. Dengan perintah &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll s&lt;/code&gt;, maka halaman-halaman Jekyll akan dicompile menjadi HTML. Terasa banget ya kecepatannya. Kalau di Windows misalnya lama compile itu 10 detik, di Linux Lite cuma 2 detik. Kurasa sih nggak di Linux Lite aja tetapi juga di distro-distro Linux lainnya.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Nggak Ada Virus&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Kalau ini sih semua Linux. Linux apa sih yang menggunakan anti virus? Nggak ada. Karena memang nggak ada virus untuk Linux. Selain orang-orang yang buat virus juga males buatnya soalnya yang make Linux orangnya cuma sedikit, juga didukung oleh arsitektur perangkat lunak di Linux itu sendiri sehingga nggak memberikan kesempatan bagi virus dalam berkembang biak.&lt;/p&gt;
+
+    &lt;p&gt;Makanya, kalau mau scan flashdisk, biasa aku pakai Linux karena virusnya kelihatan semua. Tinggal delete aja.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Baterai Lumayan Lebih Tahan Lama&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Karena menggunakan XFCE yang terkenal memakan lebih sedikit resource, sehingga pemakaian RAM pun lebih sedikit sehingga bisa membuat baterai lebih tahan lama ketika menggunakannya. Bahkan, ketika aku menggunakan Firefox, RAM-nya nggak makan terlalu banyak.&lt;/p&gt;
+
+    &lt;p&gt;Kalau Desktop Environment lain mah makan lebih banyak. Kalau Desktop Environment GNOME yang ada di Kali Linux, Elementary OS, dan Linux Mint terasa lebih berat. Apalagi kalau Desktop Environment KDE, lebih berat lagi sih katanya.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;strong&gt;Berbasis Debian&lt;/strong&gt;&lt;/p&gt;
+
+    &lt;p&gt;Linux Lite ini kan berbasis Debian, jadi aku lebih paham cara menggunakannya dalam pengelolaan package, atau yang di Windows biasa disebut dengan aplikasi. Kalau install package di distro Linux berbasis Debian, biasa kugunakan perintah &lt;code class=&quot;highlighter-rouge&quot;&gt;dpkg -i nama-panckage.deb&lt;/code&gt; kalau install secara offline. Kalau secara online, mengambil dari repositori resminya, aku menggunakan perintah &lt;code class=&quot;highlighter-rouge&quot;&gt;sudo apt install nama-package&lt;/code&gt;.&lt;/p&gt;
+
+    &lt;p&gt;Kerasa banget ya perbedaannya ketika menggunakan distro Linux berbasis Arch Linux seperti Manjaro. Tampilannya sih elegan. Terus untuk file managernya dia menggunakan Dolphin sehingga aku bisa langsung koding di dalamnya karena sudah built in dengan Terminal yang terletak di bagian bawah file manager. Cuma ya itu, agak bingung ketika pengelolaan package, termasuk dalam mengetikkan perintah-perintah di Terminal karena ada sedikit perbedaan.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+	        <pubDate>Wed, 13 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/13/pengalaman-menggunakan-linux-lite.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Wakil Ketua Umum Himpunan Mahasiswa Psikologi 2016 2017</title>
+	        <description>
+</description>
+	        <pubDate>Tue, 12 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/12/wakil-ketua-umum-himpunan-mahasiswa-psikologi-2016-2017.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+    	<item>
+	        <title>Perbedaan Http Dan Https</title>
+	        <description>
+</description>
+	        <pubDate>Tue, 12 Feb 2019 00:00:00 +0800</pubDate>
+	        
+	        <link>http://localhost:4000/2019/02/12/perbedaan-http-dan-https.html</link>
+	          
+	        
+	          
+	        
+        </item>
+    
+
+  </channel>
+</rss>

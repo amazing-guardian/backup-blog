@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<link rel="stylesheet" type="text/css" href="/vendor/pygments-css/autumn.css">
+{% if page.link %}
+	<script type="text/javascript">
+		location.href = "{{ page.link }}"
+	</script>
+{% endif %}
+<p><img src="{{ page.image }}" alt="" class="full"></p>
+<div class="container">
+	{{ content }}
+</div>
+<div class="row gambar-beranda">
+	{% for x in site.iklan %}
+		<div class="col-xs-4">
+			<a href="{{ x.link }}">
+				<img src="{{ x.gambar }}" alt="">
+			</a>
+		</div>
+	{% endfor %}
+</div>
+<div class="container">
+	{% include disqus.html %}
+</div>
